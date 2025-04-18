@@ -1,0 +1,4686 @@
+######################
+### FTS Parameters ###
+######################
+
+Parameter NVCFG_GLOBAL_FEATURE_XAPI
+{
+    Description         = "RFE 412057 - RM XAPI versioned interface control system"
+    Tags                = { Feature FTS Disabled } # Feature not ready - so marked as Disabled
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_VGX
+{
+    Description         = "RFE 988325 - New VGX architecture (virtual GPU) , high level RM virtualization"
+    Tags                = { Feature FTS Disabled } # Feature not ready - so marked as Disabled
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_TWINPEAKS
+{
+    Description   = "SRS 1855 - Kepler & Monterey SDK 1.2"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1573_SMART_POWER
+{
+    Description   = "SRS1573 - Smart Power"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1573_SMART_POWER_FRL
+{
+    Description   = "SRS1573 - Smart Power (Frame Rate Limiter)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN149_SPARSE_TEXTURE_XP_SUPPORT
+{
+    Description   = " FSN149 - OpenGL Sparse textures on WinXP"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r325 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1515_3DTV_PLAY_IGP
+{
+    Description   = "RID43437 - Optimus 3DTV Play on IGP Display (Chief River)(was SRS1515)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1745_3DV_UI_PHASE1_DYNAMIC
+{
+    Description   = "SRS1745 -3DV UI modifications (Phase 1)"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_SRS1745;EnableSRS1745;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1811_ICAFELOGO_SUPPORT
+{
+    Description   = "SRS1811 - iCafe logo"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r304 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1697_I2C_CLIENT_SERVER_MODEL
+{
+    Description   = "SRS1697 - I2C Client\Server Model"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1882_HOTKEY_FEATURES_SURROUND
+{
+    Description   = "FSN355 - Hotkey features for Surround(was SRS1882)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r325 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1734_DX10_WINDOWED_STEREO
+{
+    Description   = "RID41454 - DX10/DX11 windowed mode(was SRS1734)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1858_METRO_PROFILING_SUPPORT
+{
+    Description   = "FSN79 - DRS support for Metro WWA(was SRS1858)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r313 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1955_NVCPL_ACCESS_CONTROL_DYNAMIC
+{
+    Description   = "RID43441 - WS - NVCPL Access Control (Part 2)(was SRS1955)"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_SRS1955;EnableSRS1955;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1967_CUDA_GEFORCE_DOUBLE_PRECISION
+{
+    Description   = "FSN189 - CUDA Double Precision on Geforce(was SRS1967)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r319 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1868_GRACEFUL_REMOVAL_OF_GPU
+{
+    Description   = "RID41687 - Optimus - Graceful removal of external GPU(was SRS1868)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_ASN191_NON_VOLATILE_NVAPI_DISPLAY_ID
+{
+    Description   = "FSN191 - Support for non-volatile NVAPI display IDs"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r319 }
+}
+
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN365_OGL_SHIM_LAYER
+{
+    Description   = "FSN365 - Optimus - Add OGL Shim for Registry Filters"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r319 }
+}
+
+# This variable controls support of PTX ISA version 3.2 in compiler
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_32
+{
+    Description   = "RFE 1170582 - PTX Virtual ISA Version Support 3.2"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r319 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN253_PREMIUM_MOSAIC_GROUPS
+{
+    Description   = "FSN253 - WS - Multiple Mosaic / Premium Mosaic Groups"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r319 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN164_MULTIPLE_MOSAIC
+{
+    Description   = "FSN164 - WS - Mosaic groups NVCPL"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r322 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN322_CUDA_INSTALLER
+{
+    Description   = "FSN322 - Installer2.0 Features for CUDA Toolkit Installer"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r322 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN408_S3SR_DYNAMIC
+{
+    Description   = "RID41509 - S3-SR : Suspend in Self Refresh"
+    Tags          = { FTS Feature Disabled }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_FSN408;EnableFSN408;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN100_SURROUND_WINDOWED_AFR_DYNAMIC
+{
+    Description   = "RID41264 - Windowed AFR Acceleration for Surround (was SRS 1921)"
+    Tags          = { FTS Feature }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_FSN100;EnableFSN100;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN414_FLASH_MONITOR_DYNAMIC
+{
+    Description   = "FSN414 - Low Latency Monitor Phase B: Support for Nvidia-branded variable refresh rate monitors"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r325 }
+    FtsRegkey     = "FTS_ENABLE_FSN414;EnableFSN414;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN841_DESKTOP_MANAGEMENT_DYNAMIC
+{
+    Description   = "FSN841 - Surround - Win8 Desktop Management"
+    Tags          = { FTS Feature }
+    ReleaseTarget = { r322 }
+    FtsRegkey     = "FTS_ENABLE_FSN841;EnableFSN841;1"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN232_FORCE_FAKE_MULTIPLE_EDID
+{
+    Description   = "FSN232 - WS - Force/Fake EDID on all displays/projectors"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r325 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1000_WINBLUE_MIRACAST
+{
+    Description   = "FSN1000 - WinBlue Tegra Miracast"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r325 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1002_WINBLUE_TEGRA_48HZ
+{
+    Description   = "RID43007 - WinBlue Tegra 48Hz"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1003_WINBLUE_X86_48HZ
+{
+    Description   = "FSN1003 - WinBlue Tegra 48Hz"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r325 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1004_WINBLUE_TEGRA_MULTIPLANE_OVERLAY
+{
+    Description   = "FSN1004 - WinBlue Tegra MultiplaneOverlay"
+    Tags          = { Feature FTS }
+    #  Tags          = { Feature Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN392_APP_DETECTION_REFACTORING
+{
+    Description   = "FSN392 - Sedona 3D app installation detection refactor(was SRS 1268)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r322 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN945_WINBLUE_AGGRESSIVE_VSYNC
+{
+    Description   = "FSN945 - Graphics Power Management Enhancements: Aggressive VSYNC"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r322 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1099_DX11_1_3DBD_SUPPORT
+{
+    Description   = "SRS1099 - 3D BD Using DX11.1 Stereo"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r325 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN894_CUDA_DP_ON_SLI
+{
+    Description   = "FSN894 - CUDA Double Precision with SLI "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r325 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1117_TILED_DISPLAY
+{
+    Description   = "FSN1117 - Tiled Display Support Phrase 0"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r325 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN511_3DTVPLAYPLUS_DYNAMIC
+{
+    Description   = "RID43440 - 3DVision: 3DTV Play Plus: New 3DTV & Passive Licensing mechanism"
+    Tags          = { FTS Feature Disabled }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_FSN511;EnableFSN511;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1360_METRO_STEREO_PASSIVE_SUPPORT
+{
+    Description   = "RID43442 - Metro Stereo support on Passive 3D Display"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1356_NVAPI_METRO_SUPPORT
+{
+    Description   = "FSN1356 - Prototype for NVAPI support under Metro"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r331 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN993_SPARSE_TEXTURE
+{
+    Description   = "FSN993 - OpenGL sparse texture extension on WDDM"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r325 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1136_WEBGL_STEREO
+{
+    Description   = "RID41499 - 3DV : WebGL Stereo"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN224_MOSAIC_VIRTUAL_DISPLAY
+{
+    Description   = "FSN224 - WS - Mosaic Virtual Displays"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r337 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_NVML_7_0
+{
+    Description   = "RFE 1529098 - NVML VERSION 7.0"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r346 }
+}
+
+# This variable controls support of PTX ISA version 4.0 in compiler
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_40
+{
+    Description   = "RFE 1319088 - PTX Virtual ISA Version Support 4.0"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r331 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_43
+{
+   Description  = "PTX Virtual ISA Version Support"
+   Tags         = { Feature FTS }
+   ReleaseTarget = { r352 }
+}
+
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1261_IMPROVE_MOSAIC_SETUP_TIMES
+{
+    Description   = "FSN1261 - WS - Improve Mosaic Setup Times (DD Support)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r331 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN269_MAXIMUS_CPL_UI
+{
+    Description   = "FSN269 - WS - Maximus CPL UI"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r337 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN165_UPDATE_MOSAIC_TASKFLOW
+{
+    Description   = "FSN165 - WS - Premium Mosaic to be changed to Mosaic plus blender (SRS 1960)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r334 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN246_FORCE_STEREO
+{
+    Description   = "RID41346 - WS - Win7/Win8 Force Stereo"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r343 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1552_3DVISION_INSTALLPOR
+{
+    Description   = "RID41415 - 3D Vision Driver install POR for UDA"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r343 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1916_MIRACAST_X86
+{
+    Description   = "FSN1916 - Miracast on x86 - Phase 1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r337 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1945_SURROUND_BOOKENDS_DISSIMILAR_DISPLAYS_DYNAMIC
+{
+    Description   = "RID41326 - Surround Bookends Dissimilar Displays"
+    Tags          = { FTS Feature }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_FSN1945;EnableFSN1945;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1368_GC6_TDR_TO_RESET_GPU_DYNAMIC
+{
+    Description   = "FSN1368 - GC6 TDR to Reset GPU"
+    Tags          = { FTS Feature }
+    ReleaseTarget = { r337 }
+    FtsRegkey     = "FTS_ENABLE_FSN1368;EnableFSN1368;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_41
+{
+    Description   = "PTX Virtual ISA Version Support 4.1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r340 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_FUTURE
+{
+    Description   = "Future PTX Virtual ISA Support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_42
+{
+    Description   = "RFE 200022494 - PTX Virtual ISA Version Support 4.2"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r346 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1970_GSYNC_OPENGL_SLI
+{
+    Description   = "RID41325 - GSYNC (VRR) OpenGL SLI"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1062_CLONE_TO_FIT_SCALING
+{
+    Description   = "RID41337 - Clone to fit (downscale) for medical:"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r346 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1790_NVENC_HEADER_SEGREGATION
+{
+    Description   = "FSN1790 - NvENC Public-Private header segregation"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r337 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN2160_BULLSEYE_COVERAGE
+{
+    Description   = "RID43439 - Adding ability to toggle BullseyeCoverage on/off"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r346 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN2057_DELL_CALDERA_EXTERNAL_GRAPHICS
+{
+    Description   = "RID41340 - Dell Caldera : External Graphics - Phase 1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r340 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN2058_GPU_SR_SUPPORT
+{
+    Description   = "RID41410 - GPU : Surprise Removal support (targeting Dell Caldera : External Graphics)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r340 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID41668_5K3K_TILED_DISPLAY
+{
+    Description   = "RID41668 - 5K3K tiled monitor support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r343 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID41736_STEREO_MODE_RATINGS
+{
+    Description   = "RID41736 - Adding a stereo mode with separate ratings/notes"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r343 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID44814_UPTO_5_SURROUND_UXD_DYNAMIC
+{
+    Description   = "RID44814 - Add up to 5 monitors Surround topology support in UXD for GFE"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID44814;EnableRID44814;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID41503_5K3K_TILED_DISPLAY_PHASE2
+{
+    Description   = "RID41503 - 5K x 3K Monitor Support, Second Phase"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r346 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID46078_UPSCALING_DX11_DYNAMIC
+{
+    Description   = "RID46078 - Upscaling DX11"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID46078;EnableRID46078;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID46345_BRIDGED_SLI_TILED_DISPLAY
+{
+    Description   = "RID46345 - Bridged SLI acceleration for MST monitors"
+    Tags          = { Feature FTS Disabled}
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID45785_5K3K_TILED_DISPLAY_PHASE3
+{
+    Description   = "RID45785 - 5K x 3K Monitor Support Third Phase"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r349 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID46349_PAN_SCAN_MOSAIC_CONFIDENCE_MONITOR
+{
+    Description   = "RID46349 - Pan and Scan based Mosaic Confidence Monitor"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r349 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID45286_CPL_WARN_IF_SYNC_FW_OUT_OF_DATE
+{
+    Description   = "RID45286 - CPL Warn if Sync FW out of date"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r352 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID49376_GLNEXT_API
+{
+    Description   = "RID49376 - GLNEXT API"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r346 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID49379_NVN_3D_API
+{
+    Description   = "RID49379 - NVN 3D API"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID49171_WIN10_STEREO_SUPPORT
+{
+    Description   = "RID49171 - Windows 10: Stereo support for DX9/DX1x SLI and Surround"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r349 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID49170_D3D12_STEREO
+{
+    Description   = "RID49170 - Windows 10: Stereo Support for DX12 apps"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r355 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID49431_AUDIO_REPORTING_DYNAMIC
+{
+    Description   = "RID49431 - Fix audio reporting to meet WHQL requirements for SLI Enabled case"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID49431;EnableRID49431;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID49767_HELIXMOD_STEREO
+{
+    Description   = "RID49767 - Implement Hot-Key mechanism to shift between HelixMod patch supported profile and other profiles(3DV and 2DD)"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID41756_NVCPL_250DPI_SUPPORT_DYNAMIC
+{
+    Description   = "RID41756 - 250 DPI Support for NVCPL"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r349 }
+    FtsRegkey     = "FTS_ENABLE_RID41756;EnableRID41756;1"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID41314_HIDE_TILED_DISPLAY_DYNAMIC
+{
+    Description   = "RID41314 - Hide tiled displays from X clients"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID41314;EnableRID41314;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID50787_COLOR_SETTING_ENHANCE_PHASE1_DYNAMIC
+{
+    Description   = "RID50787 - Color Setting Enhancements - Phase 1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+    FtsRegkey     = "FTS_ENABLE_RID50787;EnableRID50787;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID50787_COLOR_SETTINGS_ENHANCEMENT
+{
+    Description   = "RID - 50787 Color Setting Enhancements - Phase 1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID50422_DSR_PHASEII_DYNAMIC
+{
+    Description   = "RID50422 - DSR implementation through app-side shim for DX10 and DX11"
+    Tags          = { Feature FTS Disabled}
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID50422;EnableRID50422;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID52669_HW_DRM_PLAYREADY
+{
+    Description   = "RID52669 - Enabling HW DRM PlayReady"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r378 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID53410_SMART_CLONE_PHASE_II
+{
+    Description   = "RID - 53410 WS -  Mosaic Confidence Monitor (single GPU) - Tiled Display support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r352 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID49454_DX12_STEREO_SLI_SURROUND
+{
+    Description   = "RID - 49454 Windows 10: Stereo support for DX12 SLI and Surround"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r358 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID53016_DX_WINDOWED_GSYNC
+{
+    Description   = "RID - 53016 DX Windowed GSync Support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r352 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID54817_UVM_LITE_FOR_MAC
+{
+    Description   = "RID - 54817 CUDA 8.0"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r361 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID54719_GSYNC_NOTEBOOK_LCD_OVERDRIVE
+{
+    Description   = "RID - 54719 LCD OverDrive for GSync Notebook"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r352 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID45286_P2060_FW_UPDATE
+{
+    Description   = "RID - 45286 WS - CPL needs to open a warn dialog if  Sync FW is too old (Windows)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r352 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID43422_WIN10_MIRACAST_HDCP
+{
+    Description   = "RID - 43422 Windows10: Miracast Encrypted Content Support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID54856_OPENGL_ES_3_2
+{
+    Description   = "RID - 54856 OpenGL ES 3.2 driver support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r358 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID54855_OPENGL_2015_EXTENSIONS
+{
+    Description   = "RID - 54855 OpenGL 4.5 ARB extensions 2015"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r358 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID55555_COOPERATIVE_GROUPS
+{
+    Description   = "RID - 55555 WASP"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID55155_GSYNC_VSYNC_ON_OFF
+{
+    Description   = "RID - 55155 Bifurcate Gsync option into Gsync (Vsync On) & Gsync (Vsync Off)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r352 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID55334_VR_SLI_2_0_MULTI_GPU_API
+{
+    Description   = "RID - 55334 VR SLI 2.0 - Explicit Multi-GPU API  (with affinity)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r352 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID55643_INCLUDE_EMULATION_DEVICES
+{
+    Description   = "RID - 55643 [INFx Generation Changes] Prevent emulation devices from accidental leaks in release branches"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID55335_DIRECT_MODE_VR
+{
+    Description   = "RID - 55335 VR - Direct Mode"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r352 }
+    FtsRegkey     = "FTS_ENABLE_RID55335;EnableRID55335;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID50052_OGL_TMON_SUPPORT_DYNAMIC
+{
+    Description   = "RID - 50052 Implement ETW logging in OGL UMD driver"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r355 }
+    FtsRegkey     = "FTS_ENABLE_RID50052;EnableRID50052;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID55577_SCREEN_CAPTURE_SHIM
+{
+    Description   = "RID55577 - Screen capture support for Share-Screenshot"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r355 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID56353_NVML_8_0
+{
+    Description   = "RID - 56353 NVML Version 8.0"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r358 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID57090_WDDMV2_MMIO_FLIPPING
+{
+    Description   = "RID - 57090 For Win10, Enable MMIO flips accross the board."
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r358 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID57634_LLVM_JIT_FOR_VULKAN
+{
+    Description   = "RID - 57634 LLVM JIT for Vulkan"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r361 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID57635_LLVM_JIT_FOR_OPENGL
+{
+    Description   = "RID - 57635 LLVM JIT for OpenGL"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID57725_NON_LINEAR_SCALING
+{
+    Description   = "RID - 57725 Non-linear Pixel Scaling"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID51940_GM206_VPR
+{
+    Description   = "RID - 51940 GM206 - VPR"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID54861_HDR_SUPPORT_IN_HDMI20_A
+{
+    Description   = "RID - 54861 HDR support in HDMI 2.0"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r355 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID58285_ENABLE_SIMPLIFIED_AFR_FLIPPING_DYNAMIC
+{
+    Description   = "RID58285 - Enable simplified AFR flipping"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID58285;EnableRID58285;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID56417_SW_DP_YCBCR420
+{
+    Description   = "RID - 56417 SW Version of DP 1.3 4:2:0 (8 to 12 bpc scanout)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r396 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_50
+{
+  Description = "PTX Virtual ISA Version Support"
+  Tags        = { Feature FTS }
+  ReleaseTarget = { r361 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID58700_WINXP_COMPILER_UPGRADE
+{
+    Description   = "RID - 58700 Windows XP compiler upgrade"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r364 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID57152_NVFBC_MULTI_CAPTURES_DYNAMIC
+{
+    Description   = "RID57152 - NVFBC Multiple Concurrent Sessions"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r390 }
+    FtsRegkey     = "FTS_ENABLE_RID57152;EnableRID57152;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID58134_AGGRESSIVE_PSTATE_ONLY
+{
+    Description   = "RID58134 - Aggressive PSTATE only on non-coproc systems"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r361 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID59403_MSHYBRID_BYDEFAULT
+{
+    Description   = "RID59403 - Win10 - Enable MsHybrid By default on IGPU + DGPU config"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID59653_DSR_VARIABLE_ASPECT_RATIO
+{
+    Description   = "RID - 59653 4K + DSR Streaming Support on non 16:9 Aspect Ratio Monitors"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r364 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID59646_DX12_SCREENSHOT
+{
+    Description   = "RID - 59646 Bridgeless SLI support for all Geforce Scanout composition based features"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r364 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID59991_DX12_DIRECTMODE_QUEUED_PRESENT
+{
+    Description   = "RID - 59991 DX12 VR Direct mode support with Queued present"
+    Requires      = { NVCFG_GLOBAL_FEATURE_RID55335_DIRECT_MODE_VR }
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r364 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID60956_DXIL
+{
+    Description   = "RID - 60956 Support MSFT's DXIL shader IR (DXIL-to-OCG path)"
+    Tags          = { Feature winnext winfuture wddm2 WinMobile }
+    ReleaseTarget = { r378 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID61147_NVAPI_RMAPI_FRAMEWORK_FOR_WIN
+{
+    Description   = "RID - 61147 GPU NVAPIs support on new RM API framework  on Windows(GP10x pwrdebug tool)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r370 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID61148_NVAPI_DRS_FEATURE_SPLIT
+{
+    Description   = "RID - 61148 Moving DRS feature NVAPIs to nvapidrs.dll from nvapi.dll"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID61114_2DD_SUPPORT_FOR_DX12
+{
+    Description   = "RID - 61114 2DD support for DX12 games"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID61091_ANSELPOSTPROCESSING
+{
+    Description   = "RID - 61091 Driver Support for Modding API"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r367 }
+    FtsRegkey     = "FTS_ENABLE_RID61091;EnableRID61091;0"
+}
+
+
+#---- BACKPORT ----
+Parameter NVCFG_GLOBAL_FEATURE_UVM_LITE
+{
+    Description   = "N/A"
+    Tags          = { Feature Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+#---- BACKPORT ----
+
+Parameter NVCFG_GLOBAL_FEATURE_RID59958_BRIDGLESS_SLI_OPTIMIZATION
+{
+    Description   = "RID - 59958 Bridgless SLI Scanout Optimization"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID61366_STEREO_SERVICE_INTEGRATION
+{
+    Description   = "RID - 61366 Move/Integrate stereo service to NV container"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r375 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID60866_RS2_VIDEO
+{
+    Description   = "RID - 60866 D3D12VIDEO"
+    Tags          = { Feature winnext winfuture wddm2}
+    ReleaseTarget = { r387 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID60925_OPTIMUS_PER_ADAPTER
+{
+    Description   = "RID - 60925 Optimus/MSHybrid : Per adapter design for supporting xGPU"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r370 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID61736_MSHYBRID_D3COLD_ON_AUDIO
+{
+    Description   = "RID61736 - Optimus/MSHybrid DGPU heads: Change in D3cold handling for audio device"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r381 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID59926_FRAME_ALIGNED_SAMPLING_DYNAMIC
+{
+    Description   = "RID59926 - Frame aligned Sampling"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r390 }
+    FtsRegkey     = "FTS_ENABLE_RID59926;EnableRID59926;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID61684_SILK_DYNAMIC
+{
+    Description   = "RID - 61684 Silk using decouple present/render for DX11"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID61684;EnableRID61684;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID64653_HDR_DISPLAY_OVER_DP_1_4
+{
+    Description   = "RID - 64653 HDR Display over DP 1.4"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r378 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID65003_NVFBC_SUPPORT_FOR_OGL_VK
+{
+    Description   = "RID - 65003 ShadowPlay OpenGL"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r381 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID63069_ENABLE_SLI_BY_DEFAULT
+{
+    Description   = "RID - 63069 Enabling LDA mode by default when installing the Graphics Driver"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r375 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID64673_RS2_HOTPLUG_DETECTION
+{
+    Description   = "RID - 64673 [RS2] Display Detection For Reliable Connection to DP monitors"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r381 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID64633_PSTATE_30_ASYNC_CLOCK_CHANGE_DYNAMIC
+{
+    Description   = "RID - 64633 "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID64633;EnableRID64633;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID64974_VULKAN_GDC17
+{
+    Description   = "RID - 64974 Vulkan GDC17 Extensions"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r381 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID64674_RS2_MODESET_SUPPORT
+{
+    Description   = "RID - 64674 RS2 Modeset and Wire Format support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r381 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID65247_VR_DIRCTMODE_TILE_DISPLAY
+{
+    Description   = "RID - 65247 [DD] DP-MST (Multi Stream Display) support with VR"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r384 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID64943_P_STATE_BOOSTING
+{
+    Description   = "RID - 64943 AGC6 - P-State Boosting"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r396 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID64696_DP_MONITORS_CAPABILITIES_DYNAMIC
+{
+    Description   = "RID - 64696 [DD] Handling Change in Capabilities of DP monitors"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID64696;EnableRID64696;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_51
+{
+  Description = "Bug 200246521 - PTX Virtual ISA Version Support"
+  Tags        = { Feature FTS }
+  ReleaseTarget = { r384 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_60
+{
+  Description = "Bug 200293320 - PTX Virtual ISA Version Support"
+  Tags        = { Feature FTS }
+  ReleaseTarget = { r384 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_61
+{
+  Description = "Bug 200340450 - PTX Virtual ISA Version Support"
+  Tags        = { Feature FTS }
+  ReleaseTarget = { r387 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID65810_MINKE
+{
+    Description   = "RID - 65810 NVX_cross_process_interop"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID64949_NB_REGIONAL_BACKLIGHT_CONTROL_DYNAMIC
+{
+    Description   = "RID - 64949 [DD] Regional Backlight Control for NoteBook"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID64949;EnableRID64949;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID65715_NOTEBOOK_HDR_DYNAMIC
+{
+    Description   = "RID - 65715 [DD] HDR Tonemapping for Notebook"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID65715;EnableRID65715;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID66210_SMOOTH_TRANSITION
+{
+    Description   = "RID - 66210 "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r381 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID66212_DOLBY_VISION_SUPPORT
+{
+    Description   = "RID - 66212 Dolby Vision support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r381 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID64944_EARLY_BOOST
+{
+    Description   = "RID - 64944 Optimus/MSHybrid - Early Boost"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r381 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID65187_8_GPUS_LDA
+{
+    Description   = "RID - 65187 Support 8 GPUs in SLI"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r384 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID66520_USER_COLOR_SETTINGS_RS2
+{
+    Description   = "RID - 66520 [DD] User controlled Color Format Setting for  RS2"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r381 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67339_DX1X_LATE_LATCH_SUPPORT
+{
+    Description   = "RID - 67339 Dx11 Late Latch support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r384 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67612_VULKAN_1_1
+{
+    Description   = "RID - 67612 Vulkan 1.1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r396 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67552_SMP_DRIVER_ASSIST_DX11
+{
+    Description   = "RID - 67552 SMP Driver Assist : DX11"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r390 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67194_TILEDDISPLAY_IN_VR_PHASE2
+{
+    Description   = "RID - 67194 [DD] DD Side Re-arch for VR: Phase II"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r384 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67823_NVENC_GRIDSW_MGMT
+{
+    Description   = "RID - 67823 NVENC interface for GRID SW Capacity management"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r384 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67822_NVCPLTELEMETRYPHASE2_DYNAMIC
+{
+    Description   = "RID - 67822 NVCPL Telemetry support - Phase 2"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID67822;EnableRID67822;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67835_MSHYBRID_D3COLD_ON_AUDIO
+{
+    Description   = "RID - 67835 Optimus : Change in D3cold handling for audio device"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r396 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67783_OPENGL_4_6
+{
+    Description   = "RID - 67783 - OpenGL 4.6"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r387 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67736_NOTEBOOK_HDR_PHASE1_DYNAMIC
+{
+    Description   = "RID - 67736 - Notebook HDR Phase 1"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r400 }
+    FtsRegkey     = "FTS_ENABLE_RID67736;EnableRID67736;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67746_ANSELDX9
+{
+    Description   = "RID - 67746 - DX9 Support for Ansel"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r387 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID64913_ANSELVULKAN
+{
+    Description   = "RID - 64913 - Vulkan Support for Ansel"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r390 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID65688_DX12_FERMI_SUPPORT
+{
+    Description   = "RID - 65688 - DX12 Fermi Support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r384 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID52174_MOSAIC32DISPLAYS
+{
+    Description   = "RID - 52174 [DD] WS - Mosaic support for >4GPUs (Windows)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r396 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67490_GAMESTREAM_HDR_RS2
+{
+    Description   = "RID - 67490 Game stream support for RS2 HDR"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r387 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67770_SP_HIGHLIGHTS_DYNAMIC
+{
+    Description   = "RID - 67770 Shadowplay Highlights SDK: Support for games with multiple windows/present contexts"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID67770;EnableRID67770;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67785_VR_VIRTUAL_DESKTOP
+{
+    Description   = "RID - 67785 Driver Support for VR Desktop"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r387 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID68264_SECURE_REGISTRY_INTERFACE_DYNAMIC
+{
+    Description   = "RID - 68264 [DD] Robust Display Driver persistence"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r387 }
+    FtsRegkey     = "FTS_ENABLE_RID68264;EnableRID68264;0"
+}
+
+# Don't change release target of below feature until you have mail confiration from mitch
+Parameter NVCFG_GLOBAL_FEATURE_RID68358_DXRT
+{
+    Description   = "RID - 68358 DXRT"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r396 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67805_ENABLE_QUADRO__XGPU_SUPPORT
+{
+    Description   = "RID - 67805 WS - xGPU : Enable Quadro support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r384 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID68263_COLORSPACE_TRANSFORM_DDI
+{
+    Description   = "RID - 68263 [DD] RS3 DDIs"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r387 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID68296_NVAPI_SECURITY_CHANGES
+{
+    Description   = "RID - 68296 Enabling NVAPI code path to use RMAPI on Windows"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r387 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID69433_VIDEO_TELEMETRY_DX
+{
+    Description   = "RID - 69433 Video telemetry: DX drivers"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID69434_VIDEO_TELEMETRY_CUVID
+{
+    Description   = "RID - 69434 Video telemetry : CUVID driver"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID69527_NVCPL_INTO_WINDOWS_STORE_DYNAMIC
+{
+    Description   = "RID - 69527 NVCPL into windows store"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r415 }
+    FtsRegkey     = "FTS_ENABLE_RID69527;EnableRID69527;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID69106_EGPU_UI_POPUP_DYNAMIC
+{
+    Description   = "RID - 69106 eGPU : UI popup on hotplug/hotunplug"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r390 }
+    FtsRegkey     = "FTS_ENABLE_RID69106;EnableRID69106;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID69436_NVTRAY_ICON_DYNAMIC
+{
+    Description   = "RID - 69436 Bring back NvTray Support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r390 }
+    FtsRegkey     = "FTS_ENABLE_RID69436;EnableRID69436;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID69540_ENABLE_NVAPI_RMAPI_CODE
+{
+    Description   = "RID - 69540 Enable NVAPI-RMAPI code path on Windows"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r396 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_D3D12_METACOMMAND
+{
+    Description   = "bug  200360190 - D3D12_METACOMMAND"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r396 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID69553_VULKAN_1_2
+{
+    Description   = "RID - 69553 Vulkan 1.2"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID69486_VR_EGPU_OPTIMIZATIONS
+{
+    Description   = "RID - 69486 eGPU VR optimizations - Part 1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID65311_SLI_SFR
+{
+    Description   = "RID - 65311 SLI SFR - DX11 support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID68361_NVPCF_DYNAMIC
+{
+    Description   = "RID - 68361 NVPCF - Nvidia Platform Controllers and Framework"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r396 }
+    FtsRegkey     = "FTS_ENABLE_RID68361;EnableRID68361;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_62
+{
+  Description = "Bug 200367001 - PTX Virtual ISA Version Support"
+  Tags        = { Feature FTS }
+  ReleaseTarget = { r396 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID65343_EIZO_VIRTUAL_SPLIT_DISPLAY
+{
+    Description   = "RID - 65343 WS - EIZO Virtual Split of physical display"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67826_CPL_FOR_MORE_THAN_4_GPU_MOSAIC_DYNAMIC
+{
+    Description   = "RID - 67826 WS - CPL for >4GPU Mosaic"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r418 }
+    FtsRegkey     = "FTS_ENABLE_RID67826;EnableRID67826;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID69485_VR_POWER_MODES
+{
+    Description   = "RID - 69485 VR power modes - Part 1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID66401_LONGIDLED3ONSLI
+{
+    Description   = "RID - 66401 Long Idle D3 on SLI"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+# Don't change release target for below feature to Rxxx until confirmed over email
+Parameter NVCFG_GLOBAL_FEATURE_RID68358_DXRT_ALLOW_PASCAL
+{
+    Description   = "RID - 68358 DXRT - Ray tracing in DX12"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r396 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_63
+{
+  Description = "Bug 200387670 - PTX Virtual ISA Version Support"
+  Tags        = { Feature FTS }
+  ReleaseTarget = { r400 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID69975_CPL_SUPPORT_FOR_USBC_DYNAMIC
+{
+    Description   = "RID - 69975 CPL module work for USB-C connected display/non-display devices"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r400 }
+    FtsRegkey     = "FTS_ENABLE_RID69975;EnableRID69975;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID70548_DUAL_AXIAL_FAN
+{
+    Description   = "RID - 70548 Volta-952: Dual Axial Fan"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r400 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID70578_VKRAY
+{
+    Description   = "RID - 70578 OpenGL and Vulkan support on Turing"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r400 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID71009_OPENGL_VULKAN_FUTURE
+{
+    Description   = "RID - 71009 OpenGL/Vulkan unreleased features"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67747_NVAPI_RELOAD_ON_DRIVER_UPDATE
+{
+    Description   = "RID - 67747 NvAPI Reload on driver update"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r415 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID70215_NVAPI_SUPPORT_FOR_CV_PHASE_II
+{
+    Description   = "RID - 70215 NVAPI support for Client Virtualization: Phase II"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r415 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID70989_RS5_VIDEO
+{
+    Description   = "RID - 70989 [RS5] D3D12: Hardware Motion Vector Extraction"
+    Tags          = { Feature winnext wddm2 winfuture }
+    ReleaseTarget = { r415 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID57379_SMART_CLONE_WIN10_SUPPORT
+{
+    Description   = "RID - 57379 WS -  SmartClone - Win10 Support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r415 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID71584_CUDA_384_FORWARD_COMPATIBILITY
+{
+    Description   = "RID - 71584 CUDA Forward Compatibility"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r400 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID68984_OPENGL_SLI_CFR_SUPPORT
+{
+    Description   = "RID - 68984 Checkerboard Frame Rendering (CFR) SLI support for Turing"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID71583_GPUTRACEVULKAN
+{
+    Description   = "RID - 71583 Vulkan GPU Trace Stage 1 driver support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r418 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID70974_GL_TO_VK_RESOURCE_INTEROP
+{
+    Description   = "RID - 70974 WS - OpenGL to Vulkan resource interop"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r415 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID71670_D3D12_WIN7
+{
+    Description   = "RID - 71670 DirectX 12 on Win7"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID71821_IMPROVE_32_DISPLAY_SET_UP_TIME
+{
+    Description   = "RID - 71821 WS - Improve 32 display Set up Time"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r415 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID69477_TILEDISPLAY_AS_SINGLEDISPLAY_DYNAMIC
+{
+    Description   = "RID - 69477 WS - Report and treat tiled monitors as a single display rather than as a collection of tiles with independently configurable tiles."
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r415 }
+    FtsRegkey     = "FTS_ENABLE_RID69477;EnableRID69477;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID69878_NVAPI_PER_ADAPTER_SUPPORT
+{
+    Description   = "RID - 69878 NVAPI : Update per GPU nvapis to use correct adapter for escape/IOCTL call"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r418 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_64
+{
+  Description = "Bug 200444865 - PTX Virtual ISA Version Support"
+  Tags        = { Feature FTS }
+  ReleaseTarget = { r418 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID67369_WS_SHOW_NVLINK_STATE_IN_NVCPL_DYNAMIC
+{
+    Description   = "RID - 67369 WS - Show NVLINK state in NVCPL"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+    FtsRegkey     = "FTS_ENABLE_RID67369;EnableRID67369;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID70213_NVAPI_ESCAPE_REMOVE_PORTED
+{
+    Description   = "RID - 70213 NVAPI Security: Removing nvapi escape functions (using RM controls)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72557_TURING_TITAN_DISALLOW_BOOT_DYNAMIC
+{
+    Description   = "RID - 72557 Turing Titan FTS Boot Control"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r415 }
+    FtsRegkey     = "FTS_ENABLE_RID72557;EnableRID72557;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID71484_WS_DD_SLI_FRAMELOCK
+{
+    Description   = "RID - 71484 WS - reimplement SLI SW POR"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r418 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72728_HDR_INDICATOR
+{
+    Description   = "RID - 72728 DD HDR Indicator"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID71548_DP_AUX_I2C_ESCAPE_DYNAMIC
+{
+    Description   = "RID - 71548 [DD] Escape based DDI for User Mode Access of DP AUX/I2C channel for RS5"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r421 }
+    FtsRegkey     = "FTS_ENABLE_RID71548;EnableRID71548;0"
+}
+
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72837_KT_MULTINODE
+{
+    Description   = "RID - 72837 KT tasks"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72997_OS_SUPPORTED_VRR
+{
+    Description   = "RID - 72997 OS Supported VRR"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r435 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID62152_MERGING_MULTIPLE_SOURCES
+{
+    Description   = "RID - 62152 WS - Smartclone of Mosaic of portrait monitors to landscape display"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72938_ADAPTIVESYNC_NVCPL_MONITOR_DYNAMIC
+{
+    Description   = "RID - 72938 AdaptiveSync NvCPL per monitor setting"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r415 }
+    FtsRegkey     = "FTS_ENABLE_RID72938;EnableRID72938;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72558_HDR_SUPPORT_FOR_MOSAIC_DYNAMIC
+{
+    Description   = "RID - 72558 HDR support for mosaic Phase 1 [PLC-L0]"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+    FtsRegkey     = "FTS_ENABLE_RID72558;EnableRID72558;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73090_GPU_PROFILE_ACCESS_CONTROL_DYNAMIC
+{
+    Description   = "RID - 73090 Rendered Insecure GPU side channel attacks - Short Term Solution"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r418 }
+    FtsRegkey     = "FTS_ENABLE_RID73090;EnableRID73090;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72542_DYNAMIC_DISPLAY_MUX
+{
+    Description   = "RID - 72542 ACE Display Mux Support - Internal"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID70579_MULTIPLANE_OVERLAY_DYNAMIC
+{
+    Description   = "RID - 70579 [DD] Multiplane overlay (MPO) support on NVDisplay GPUs (Turing+)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r455 }
+    FtsRegkey     = "FTS_ENABLE_RID70579;EnableRID70579;1"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72056_NVAPI_LINUX_SUPPORT_PHASE_II
+{
+    Description   = "RID - 72056 NVAPI Support on Linux - Phase II"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72540_ACE_POWER_MODE_AND_DISPLAY_MUX_DYNAMIC
+{
+    Description   = "RID - 72540 ACE Power Mode and Display Mux support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+    FtsRegkey     = "FTS_ENABLE_RID72540;EnableRID72540;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR519_HW_DRM_PLAYREADY_4_4
+{
+    Description   = "GR - 519 Hardware DRM PlayReady Porting Kit 4.4 Support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73287_ADAPTIVE_SYNC_SURROUND_DYNAMIC
+{
+    Description   = "RID - 73287 Adaptive Sync Surround"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r418 }
+    FtsRegkey     = "FTS_ENABLE_RID73287;EnableRID73287;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73110_GPU_ADAPTIVE_VRS
+{
+    Description   = "RID - 73110 VR - VRS enablement with GPU load balance"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r435 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72816_INFRA_TO_ALLOW_OS_PRIVATEESC_DYNAMIC
+{
+    Description   = "RID - 72816 [KMD]: KMD needs to provide infrastructure for Microsoft-only private escape calls [PLC-L0]"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r421 }
+    FtsRegkey     = "FTS_ENABLE_RID72816;EnableRID72816;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72409_GRID_LICENSING_CLIENT_2_0
+{
+    Description   = "RID - 72409 Licensing 2.0 - Grid SW Driver Changes in licensing Client"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID71052_VK_KHR_DISPLAY_FOR_WINDOWS
+{
+    Description   = "RID - 71052 WS - Vulkan Direct Mode Display (Windows) [PLC-L0]"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72201_DECLARATIVE_DRIVER_INSTALL_DYNAMIC
+{
+    Description   = "RID - 72201 Declarative Installation"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r421 }
+    FtsRegkey     = "FTS_ENABLE_RID72201;EnableRID72201;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73099_WS_MOSAIC_IMPROVEMENTS_DYNAMIC
+{
+    Description   = "RID - 73099 WS - Mosaic CPL\UI Improvements"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID73099;EnableRID73099;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID70214_NVAPI_SUPPORT_WINDOWS_ONE_CORE
+{
+    Description   = "RID - 70214 NVAPI Support for Windows One Core OS"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r435 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72966_RESTRICT_ACCESS_TO_NVINTERNAL
+{
+    Description   = "RID - 72966 [PLC L0] Restrict access to NvInternal and uservisible DRS settings through public NvAPIs"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r445 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73893_CBL_USE_CUDA
+{
+    Description   = "RID - 73893 cuBinLoader Reunification: allow CUDA to run CBL workloads using a compatibility layer"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r435 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73116_DYNAMIC_DISPLAY_LOCKS
+{
+    Description   = "RID - 73116 Support partially scanlocks disable/enable to achieve glichless modeset on multi-monitors"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r435 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73894_CUDA_DX11_INTEROP
+{
+    Description   = "RID - 73894 CUDA DirectX 11 Interoperability: Allow CUDA to import DirectX 11 memory and synchronization objects"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73895_CUDA_MEM_MAP_API
+{
+    Description   = "RID - 73895 CUDA Memory Mapping API: Allow CUDA to manage virtual and physical memory"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73909_RTX_INTERNAL_CONFIG
+{
+    Description   = "RID - 73909 Internal config for testing TTU on/off etc"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72193_MSHYBRIDBYDEFAULT
+{
+    Description   = "RID - 72193 MSHybrid : Enable MSHybrid by default"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73737_STREAMLINE_USAGE_BOUNDS_DYNAMIC
+{
+    Description   = "RID - 73737 [DD] Streamline usage bounds handling in Windows Display Driver [PLC-L0]"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+    FtsRegkey     = "FTS_ENABLE_RID73737;EnableRID73737;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73779_CPL_IMPROVED_LATENCY_CONTROLS_DYNAMIC
+{
+    Description   = "RID - 73779 NVCPL : Improved latency controls [PLC-L0]"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+    FtsRegkey     = "FTS_ENABLE_RID73779;EnableRID73779;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73780_CPL_TEXTURE_FILTERING__DYNAMIC
+{
+    Description   = "RID - 73780 NVCPL - Quadro OpenGL: Texture filtering - Quality reset default to High Quality - [PLC-L0]"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r435 }
+    FtsRegkey     = "FTS_ENABLE_RID73780;EnableRID73780;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_R421_PERF_CHANGES
+{
+    Description   = "Bug 2596821 - NVConfig Key for R421 Perf Changes"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_65
+{
+    Description   = "Bug 200518800 - PTX Virtual ISA Version Support"
+    Requires      = { NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_64 }
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_70
+{
+    Description   = "Bug 200557892 - PTX Virtual ISA Version Support"
+    Requires      = { NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_65 }
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r445 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_71
+{
+    Description   = "Bug 200616756 - PTX Virtual ISA Version Support"
+    Requires      = { NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_70 }
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r455 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_72
+{
+    Description   = "Bug 200651152 - PTX Virtual ISA Version Support"
+    Requires      = { NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_71 }
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_73
+{
+    Description   = "Bug 200682118 - PTX Virtual ISA Version Support"
+    Requires      = { NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_72 }
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r465 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_74
+{
+    Description   = "Bug 200713105 - PTX Virtual ISA Version Support"
+    Requires      = { NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_73 }
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_75
+{
+    Description   = "Bug 200745993 - PTX Virtual ISA Version Support"
+    Requires      = { NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_74 }
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_76
+{
+    Description   = "Bug 200774931 - PTX Virtual ISA Version Support"
+    Requires      = { NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_75 }
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_77
+{
+    Description   = "Bug 3489540 - PTX Virtual ISA Version Support"
+    Requires      = { NVCFG_GLOBAL_FEATURE_PTX_ISA_VERSION_76 }
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72544_EGPU_NVAPI_ESCAPES
+{
+    Description   = "RID - 72544 eGPU : Power ON correct adapter(s) for NVAPI Escapes"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74328_INTEGER_SCALING
+{
+    Description   = "RID - 74328 Support Integer Scaling"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74361_10BIT_WORKFLOW_ON_GEFORECE_DYNAMIC
+{
+    Description   = "RID - 74361 [DD] 10 bit workflow driver support on windows 10 for GeForce"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r435 }
+    FtsRegkey     = "FTS_ENABLE_RID74361;EnableRID74361;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74267_VR_HMD_TEXT_OVERLAY
+{
+    Description   = "RID - 74267 VR - HMD display message in HMD"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73106_NVCPL_PERFORMANCE_IMPROVEMENTS_DYNAMIC
+{
+    Description   = "RID - 73106 NVCPL Performance & footprint Improvements"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+    FtsRegkey     = "FTS_ENABLE_RID73106;EnableRID73106;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73444_VDPAU_VP9_SUPPORT
+{
+    Description   = "RID - 73444 [VDPAU] VP9 support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74478_VK_AFTERMATH_GCD
+{
+    Description   = "RID - 74478 Vulkan Aftermath GPU Crash Dumps"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74336_HDMI_2_1_VRR_DYNAMIC
+{
+    Description   = "RID - 74336 [DD] HDMI 2.1 VRR"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+    FtsRegkey     = "FTS_ENABLE_RID74336;EnableRID74336;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74501_DDICONTROLINTERRUPT3_DYNAMIC
+{
+    Description   = "RID - 74501 [DD] MS DDI Vibranium - Independent VidPnSource VSync Control (DxgkDdiControlInterrupt3)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+    FtsRegkey     = "FTS_ENABLE_RID74501;EnableRID74501;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74340_VRR_MULTIPLANE_COMPATIBILITY_DYNAMIC
+{
+    Description   = "RID - 74340 [DD] VRR and MPO compatibility [PLC-L0]"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r445 }
+    FtsRegkey     = "FTS_ENABLE_RID74340;EnableRID74340;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74903_CUDA_WINDOWS_DRIVER_LOADER
+{
+    Description   = "RID - 74903 CUDA Windows Driver Loader - CV / Driver Isolation effort"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74732_CUDA_MEM_MAP_API_STAGE_2
+{
+    Description   = "RID - 74732 cuMemMap Stage 2"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r445 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74731_CUDA_MEM_MAP_COMPRESSION
+{
+    Description   = "RID - 74731 cuMemMap compression"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r445 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74685_DD_AUTOTEST_FORCED_BUGCHECK
+{
+    Description   = "RID - 74685 DD test automation infrastructure to bugcheck on assert"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74712_DRIVER_SIDE_IMAGE_SHARPENING_DYNAMIC
+{
+    Description   = "RID - 74712 Driver Side Sharpening / Scaling"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+    FtsRegkey     = "FTS_ENABLE_RID74712;EnableRID74712;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74622_DXR_TIER_1_1
+{
+    Description   = "RID - 74622 [PLC L1][Vibranium] DXR Tier 1.1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74488_HW_SSM_SUPPORT_DYNAMIC
+{
+    Description   = "RID - 74488 Move Bluray encryption stack to use SSM scheme for Turing and above"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+    FtsRegkey     = "FTS_ENABLE_RID74488;EnableRID74488;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74521_10BIT_COLOR_FOR_VGPU_DYNAMIC
+{
+    Description   = "RID - 74521 10-bit color for vGPU"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+    FtsRegkey     = "FTS_ENABLE_RID74521;EnableRID74521;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74489_EIZO_OEM_10BPC_COLOR_DEFAULTS
+{
+    Description   = "RID - 74489 WS -EIZO OEM driver package: make SDR 30-bit desktop color depth and 10 bpc wire format the default configuration"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r445 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID75044_INDICATE_DRIVER_TYPE_IN_NVCPL_DYNAMIC
+{
+    Description   = "RID - 75044 NVCPL - Indicate driver type in NVCPL UI Home Page"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+    FtsRegkey     = "FTS_ENABLE_RID75044;EnableRID75044;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74237_DEPRECATE_REMOVE_HYBRID_NVAPI
+{
+    Description   = "RID - 74237 [PLC L0] Deprecate and remove code for all Intel/MCP hybrid NVAPIs"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r445 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74946_NULLGSYNC
+{
+    Description   = "RID - 74946 Ultra Low Latency GSYNC + VSYNC mode"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74479_AUTOFL
+{
+    Description   = "RID - 74479 [PLC L1]AutoFL + QBoost for N18xRefresh to improve performance"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID75159_IMAGE_SHARPENING_VULKAN
+{
+    Description   = "RID - 75159 Image Sharpening & Upscaling for Vulkan/OpenGL"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID64380_WS_VULKAN_SWAPGROUP_SUPPORT
+{
+    Description   = "RID - 64380 WS - Vulkan Swapgroup support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID70555_WORKSTATION_DIRECT_DISPLAY
+{
+    Description   = "RID - 70555 WS - Direct Display for Workstation Use Cases"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r455 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID75060_GRID_LICENSE_TIMEBOMBING
+{
+    Description   = "RID - 75060 License timebombing."
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID75176_VULKAN_VIDEO_CORE
+{
+    Description   = "RID - 75176 Vulkan Video Core"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID75167_DDS_HOTKEY_SUPPORT_DYNAMIC
+{
+    Description   = "RID - 75167 NVCPL - DDS - HotKey Support & NVTray Modification"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+    FtsRegkey     = "FTS_ENABLE_RID75167;EnableRID75167;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR70_OPTIMUS_IMPROVE_GC_OFF_ON_TURING
+{
+    Description   = "GR-70 PLC-L0 - Optimus - Improve GC-OFF on Turing"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74631_DISPLAY_DIAGNOSTICS_DDI
+{
+    Description   = "RID - 74631 Display Diagnostics DDI"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74721_VDPAU_HEVC_MAIN_10_12_SUPPORT
+{
+    Description   = "RID - 74721 [VDPAU] HEVC Main 10/12 support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74954_NVAPI_RELOAD_ON_DRIVER_UPDATE_DYNAMIC
+{
+    Description   = "RID - 74954 Provide NVAPI dll Reload functionality on Driver Update"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID74954;EnableRID74954;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74504_NVAPI_SUPPORT_ONE_CORE_PHASE_2
+{
+    Description   = "RID - 74504 NVAPI Support for Windows One Core OS - Phase II"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r455 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID75307_NVCPL_FRAME_RATE_LIMIT_DYNAMIC
+{
+    Description   = "RID - 75307 [PLC0] Frame Rate Limit (NVCPL UI)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r445 }
+    FtsRegkey     = "FTS_ENABLE_RID75307;EnableRID75307;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73484_8GPU_SYNCED_CLUSTER
+{
+    Description   = "RID - 73484 [DD] 8 GPU Synced Cluster"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR148_WINCAPTURE_SUPPORT_FOR_WIN10
+{
+    Description   = "GR-148 - WinCapture_Support_for_Win10"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74945_SLI_MOSAIC_YUV_ACROSS_GPU_DYNAMIC
+{
+    Description   = "RID - 74945 SLI Mosaic YUV Handling Across GPUs"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+    FtsRegkey     = "FTS_ENABLE_RID74945;EnableRID74945;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74632_DP_AUX_I2C_DDI_DYNAMIC
+{
+    Description   = "RID - 74632 [DD] DP AUX DDI"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+    FtsRegkey     = "FTS_ENABLE_RID74632;EnableRID74632;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID74950_SPARSE_TEXTURES
+{
+    Description   = "RID - 74950 CUDA Sparse Texture Support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73109_NVENC_GRID_SESSION_INFO
+{
+  Description   = "RID - 73109 Information of NVENC Sessions on Linux Guests"
+  Tags          = { Feature FTS }
+  ReleaseTarget = { r460 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR53_OPTIMUS_UI_UPDATE_FOR_20H1_DYNAMIC
+{
+    Description   = "GR-53 - Optimus UI update for 20H1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+    FtsRegkey     = "FTS_ENABLE_GR53;EnableGR53;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR145_NVCUVID_AV1_DECODE_SUPPORT
+{
+  Description   = "GR-145 AV1 Decode Support in NVCUVID"
+  Tags          = { Feature FTS }
+  ReleaseTarget = { r455 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR254_HMFT_NEW_ENCODE_PRESET
+{
+    Description   = "GR - 254 Move Encode HFMT to new NVENC presets"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r455 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR239_NVAPI_EDID_ADMIN_CHECK
+{
+    Description   = "GR - 239 EDID override should have Administrator check"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r455 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR240_NVSLL_SUPPORT_TCC_DEVICES
+{
+    Description   = "GR - 240 NvSecureLoadLibrary support for TCC devices."
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r455 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR255_MANGANESE_VIDEO
+{
+    Description   = "GR - 255 D3D12 Video Encoding"
+    Tags          = { Feature winnext wddm2 winfuture }
+    ReleaseTarget = { r465 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR149_NVTOPPS_FRAMEWORK
+{
+    Description   = "GR - 149 [PLC-L1] NvTOPPS Framework"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r455 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR314_DL_DSR
+{
+    Description   = "GR - 314 DL DSR"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR327_FRAME_RATE_UP_CONVERSION
+{
+    Description   = "GR - 327 Frame Rate Up Converter For Optical Flow SDK"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR259_GC6_S2IDLE            
+{            
+    Description   = "GR - 259 Support for GC6 state during S2IDLE"            
+    Tags          = { Feature FTS }            
+    ReleaseTarget = { r460 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR42_CCX_SDK
+{
+    Description   = "GR - 42 Cloud Capture and Optional Encode (CCx) SDK"
+    Tags          = { Feature winnext winfuture wddm2 }
+    ReleaseTarget = { r460 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR434_VK_KHR_RAY_TRACING
+{
+    Description   = "GR - 434 VK_KHR_ray_tracing"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR133_2HEAD1OR_MST
+{
+    Description   = "GR - 133 Enable 2Head1Or in DP MST mode"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK632_CUDA_SPARSE_ARRAYS
+{
+    Description   = "CTK - 632 Expose sparse textures in CUDA"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_1 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1002_CUDA_HOST_REGISTER_READ_ONLY
+{
+    Description   = "CTK - 1002 Support Read-Only Mappings in cudaHostRegister"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_1 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1240_PROJECT_IAC_PHASE1
+{
+    Description   = "CTK - 1240 Project IAC - Phase 1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_2 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK921_CUDA_GET_PROC_ADDRESS
+{
+    Description   = "CTK - 921 [RFE] Expose driver symbols in runtime API"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_3 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR425_NVCUVID_CRMDEVICE_PER_SESSION
+{
+    Description   = "GR - 425 [NVCUVID] Create CVideoDevice/CRMDevice per decode/encode/of/stillImage session"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR454_PIECEMEAL_PROFILING
+{
+    Description   = "GR - 454 Piecemeal Profiling (PGO)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR499_VRSS_GAZE
+{
+    Description   = "GR - 499 [VR] VRSS v2 - Gaze support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR507_DELETE_DEPRECATED_CUDA_4_0
+{
+    Description   = "GR - 507 Delete functions deprecated in CUDA 4.0"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR319_CUDA_WDDM_LEGACY_IPC_SUPPORT
+{
+    Description   = "GR - 319 [PLC-L0][CUDA]Add compatibility support for legacy CUDA IPC APIs on WDDM"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR766_CPUVISIBLE_VIDEO_MEMOERY_SEGMENT_SUPPORT
+{
+    Description   = "GR - 766 [PLC_L1] Support CPUVisible Video memory segment with LargeBAR1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR376_BACKGROUND_APPLICATION_MAX_FR_DYNAMIC
+{
+    Description   = "GR - 376 Background Application Max Frame Rate"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+    FtsRegkey     = "FTS_ENABLE_GR376;EnableGR376;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR442_REFLEX_SDK
+{
+    Description   = "GR - 442 Low Latency SDK support for DX11 + DX12"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r455 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK958_CUDA_IMPORT_EXTERNAL_VULKAN_TIMELINE_SEMAPHORE
+{
+    Description   = "CTK - 958 CUDA support for Vulkan timeline semaphores via cudaImportExternalSemaphore"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_2 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK989_CUDA_DX_NV12_INTEROP
+{
+    Description   = "CTK - 989 CUDA support for importing NV12 textures from DirectX 11 and above"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_2 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK972_IO_CONSISTENCY_APIS
+{
+    Description   = "CTK - 972 CUDA support for IO consistency"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_3 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK928_CUDA_STREAM_ORDERED_SUBALLOCATOR
+{
+    Description   = "CTK - 928 CUDA stream-ordered suballocator"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_2 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR151_HW_DRM_SSM_SUPPORT
+{
+    Description   = "GR - 151 Move HEVC Legacy PlayReady Kit 3.0 to SSM"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r465 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR539_ADD_NEW_FIELDS_IN_SYS_INFO_DYNAMIC
+{
+    Description   = "GR - 539 999"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+    FtsRegkey     = "FTS_ENABLE_GR539;EnableGR539;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1244_GCC_6_2_GLIBC_2_17_TOOLKIT
+{
+    Description   = "CTK - 1244 Switch to gcc6.2-glibc2.17 toolkit"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_4 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR231_MIRRORED_CLONE_MODE_STEREO
+{
+    Description   = "GR - 231 WS - mirrored clone mode stereo scanout"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r465 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR246_MOSAIC_DISPLAY_MIRRORING
+{
+    Description   = "GR - 246 WS - add Mosaic Display Configs: independent mirroring of displays"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r465 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR544_BASIC_HW_FLIP_QUEUE
+{
+    Description   = "GR - 544 MSFT: Basic Hardware Flip Queue Support(Videos)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r465 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR494_BRIGHTNESS3_SUPPORT_IN_DDS_DYNAMIC
+{
+    Description   = "GR - 494 [DDS2.0]Brightness 3 support on HDR+DDS platforms"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r465 }
+    FtsRegkey     = "FTS_ENABLE_GR494;EnableGR494;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR529_NVAPI_REMOVE_EMBEDDED_POINTERS
+{
+    Description   = "GR - 529 Address NvAPI security issues: Remove embedded pointers and fix kernel privileged escapes"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r465 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR594_VRSS_VENDOR_GAZE_PROVIDER
+{
+    Description   = "GR - 594 [VR] VRSS v2.1 - Tobii Integration for gaze support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r465 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR538_PCON_SOURCE_CONTROL_MODE_DYNAMIC
+{
+    Description   = "GR - 538 DP to HDMI2.1 PCON Source Control Mode"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r465 }
+    FtsRegkey     = "FTS_ENABLE_GR538;EnableGR538;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1450_CUDA_USER_OBJECTS
+{
+    Description   = "CTK - 1450 cuda graphs user objects"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_3 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1449_STREAM_CAPTURE_INTEROP
+{
+    Description   = "CTK - 1449 Stream capture composibility enhancements"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_3 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1310_POSITION_INDEPENDENT_LOADING
+{
+    Description   = "CTK - 1308 Position independent loading"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_12_0 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1505_POSITION_INDEPENDENT_LOADING_OPENCL
+{
+    Description   = "CTK - 1505 Position independent loading - OpenCL"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rCUDA_Future_Release }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR245_VDPAU_AV1_PROFILE0_SUPPORT
+{
+    Description   = "GR - 245 [VDPAU] [GA10x] Add AV1 decoder support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR448_CROSSFUNCTIONILKUPDATE_DYNAMIC
+{
+    Description   = "GR - 448 [PLC-L0][DD Refactoring] Interlock update the core channel and window channel at the same time."
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+    FtsRegkey     = "FTS_ENABLE_GR448;EnableGR448;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR621_NVAPI_SUPPORT_UNLINKED_SLI
+{
+    Description   = "GR - 621 NvAPI Support Unlinked SLI"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR616_NVCPL_GPU_INFO_CHANGES_II_DYNAMIC
+{
+    Description   = "GR - 616 NVCPL GPU Info changes - II (add DB2.0, WM2.0, DDS capability in CPL)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+    FtsRegkey     = "FTS_ENABLE_GR616;EnableGR616;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR593_DLDSR_ADDITONAL_SCALE_FACTORS
+{
+    Description   = "GR - 593 Additional scale factors for DL DSR"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR264_D3D12_ENCODE_EXTENSION
+{
+    Description   = "GR - 264 Video native D3D12 support for EncodeAPI"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR656_MINIMAL_COMPUTE_DRIVER
+{
+    Description   = "GR - 656 Minimal Windows Driver"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1312_GPU_CODE_DEDUPLICATION
+{
+    Description   = "CTK - 1312 GPU Code Deduplication - single process"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_12_0___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR653_DLFG
+{
+    Description   = "GR - 653 [PLC-L1] DLFG - Deep Learning Frame Generation"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r520 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR662_RESTRICT_SVPSAMPO3_SRC_LOCK
+{
+    Description   = "GR - 662 Remove the per source serialization WAR added for RS3 OS bug"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR661_INTERLOCK_WINDOW_MPO
+{
+    Description   = "GR - 661 Interlock updates for all windows that are part of the same flip call (MPO)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1615_CUDA_NORMALIZED_INT_FORMATS
+{
+    Description   = "CTK - 1615 CUDA Normalized Integer Formats "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_5 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR523_DX12_PRESENT_BARRIER
+{
+    Description   = "GR - 523 WS - DX12 present barrier support with non-blocking present"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1041_CUDA_BLOCK_COMPRESSED_FORMATS
+{
+    Description   = "CTK - 1041 CUDA Block Compressed Formats"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_5 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR587_RIVERMAXDISPLAY_2_1
+{
+    Description   = "GR - 587 WS - RivermaxDisplay (stage 2: productization step 1)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR513_CUSTOM_RES_COLOR_SUPPORT
+{
+    Description   = "GR - 513 WS - add support for 10-bit color with custom resolution "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR443_WDDM_RDMA
+{
+    Description   = "GR - 443 WS - GPUDirect - RDMA on WDDM2+"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR671_NVCPL_DDS_TRAY_UI_API_FOR_OEM_DYNAMIC
+{
+    Description   = "GR - 671 [DDS] [ACE] DDS Tray UI API for OEM"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+    FtsRegkey     = "FTS_ENABLE_GR671;EnableGR671;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR663_MPO_OPTIMIZATION
+{
+    Description   = "GR - 663 Optimize resource reservation and release for MPO"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK987_APM
+{
+    Description   = "CTK - 987 GPU Confidential computing - protected Memory for GA10X"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_Future_Release }
+}
+Parameter NVCFG_GLOBAL_FEATURE_CONFIDENTIAL_COMPUTE
+{
+    Description   = "GPU Confidential computing"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1674_CONTEXTLESS_LOADING
+{
+    Description   = "CTK - 1674 Implement context-less loading in driver and runtime"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_12_0 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR599_DRIVER_POWER_STATE_HANDSHAKE
+{
+    Description   = "GR - 599 Driver power state handshake"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1430_CUDA_DEV_PINNED_MEMORY_LIMIT
+{
+    Description   = "CTK - 1430 CUDA Memory Limit Feature - Jump Trading Deliverable"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_4 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR692_VIRTUAL_REFRESH_RATE_DYNAMIC
+{
+    Description   = "GR - 692 [DD][Cobalt] Virtual Refresh Rate"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+    FtsRegkey     = "FTS_ENABLE_GR692;EnableGR692;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR646_STEREO_OUTPUT_CONTROL
+{
+    Description   = "GR - 646 WS - Stereo output configuration interface"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR690_WINMLGFX_DYNAMIC
+{
+    Description   = "GR - 690 [PLC-L1] WinMLGraphics - A Windows Runtime for Standardized ML Features"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_GR690;EnableGR690;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_3_2021
+{
+    Description   = "Bug 200708064 - Security Rollout 3 2021"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GPUSWDTMRD793_NVIDIA_OCA_TELEMETRY
+{
+    Description   = "GPUSWDTMRD - 793 [PLC-L1] NVIDIA OCA Telemetry"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1659_GRAPHS_RELAXED_CTX_LOCKING
+{
+    Description   = "CTK - 1659 [CUDAGraphs] Eliminate context locks from launch"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_4 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1391_CUDA_JIT_LTO_SUPPORT
+{
+    Description   = "CTK - 1391 LTO support in nvrtc"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_4 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR717_PRESENTAT_DYNAMIC
+{
+    Description   = "GR - 717 PresentAT support for wddm3.0"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r515 }
+    FtsRegkey     = "FTS_ENABLE_GR717;EnableGR717;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1406_GRAPH_MEM_NODES
+{
+    Description   = "CTK - 1406 [CUDAGraphs] cudaMallocAsync support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_4 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1502_NVCFG_GLOBAL_FEATURE_WSL_CUDA
+{
+    Description   = "CTK - 1502 WSL2 CUDA Driver Deliverables for r470 MSFT RTM CERT Program"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_4 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR649_FRUC_PRODUCTIZATION_DYNAMIC
+{
+    Description   = "GR - 649 FRUC enhancements and productization with OF SDK"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+    FtsRegkey     = "FTS_ENABLE_GR649;EnableGR649;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR768_VULKAN_1_3
+{
+    Description   = "GR - 768 Vulkan 1.3"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR774_CTXDMA_POOL_FOR_SCANOUT_ALLOC
+{
+    Description   = "GR - 774 Bind/update context dma for scanout allocations at high irql"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1129_CUDA_SEAMLESS_CUBEMAP_FILTER
+{
+    Description   = "CTK - 1129 CUDA support for seamless cubemap filtering"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_6 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR764_BASIC_HW_FLIP_QUEUE_PHASE_III
+{
+    Description   = "GR - 764 MSFT: Basic Hardware Flip Queue Support - Phase III"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1907_CUDA_MPS_DEV_PINNED_MEM_LIMIT
+{
+    Description   = "CTK - 1907 MPS Client Memory Limits"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_5 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1171_CU_MEM_SET_ACCESS_READ_ONLY
+{
+    Description   = "CTK - 1171 Support Read-Only cuMemSetAccess Flag"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_8___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR570_SUPPORT_FOR_AMD_PSR_API
+{
+    Description   = "GR - 570 DDS : Support for PSR APIs from AMD"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1873_CUDA_GRAPHS_WDDM_MEM_TRACKING
+{
+    Description   = "CTK - 1873 CUDA graphs physical memory use tracking for WDDM"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_8___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1455_LOW_POWER_CUDA_CONTEXT
+{
+    Description   = "CTK - 1455 Low power CUDA context"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_5 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR720_CUDA_NO_NVAPI
+{
+    Description   = "GR - 720 Remove CUDA Driver Dependency on NVAPI"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1944_CUDA_LAZY_FUNCTION_LOADING
+{
+    Description   = "CTK - 1944 Lazy Function Loading"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_7 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR730_PSR
+{
+    Description   = "GR - 730 DDS : Add VESA PSR support in dGPU driver"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR669_ENTERPRISE_DRIVER_NAME_QUERY
+{
+    Description   = "GR - 669 NVAPI - add external API to query build/branch details for the installed/active NVIDIA gfx driver"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r525 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1325_REMOVE_TEXTURE_AND_SURFACE_REF
+{
+    Description   = "CTK - 1325 Remove texture and surface reference support from CUDART and NVCC"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_12_0___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR805_DEPRECATE_DX9_OVERLAY_DYNAMIC
+{
+    Description   = "GR - 805 Deprecate DX9 Overlay support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+    FtsRegkey     = "FTS_ENABLE_GR805;EnableGR805;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR710_DX_DDISPLAY_SUPPORT
+{
+    Description   = "GR - 710 WS - DX support for ddisplays managed by wksServicePlugin"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR711_DX_DDISPLAY_PRESENTBARRIER
+{
+    Description   = "GR - 711 WS - DX presentbarrier support for ddisplay"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR770_RIVERMAXDISPLAY_2_2
+{
+    Description   = "GR - 770 WS - RivermaxDisplay (stage 2: productization step 2)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_4_2021
+{
+    Description   = "Bug 200740586 - Security Rollout 4 2021"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR787_D3D12_ENCODE_AV1
+{
+    Description   = "GR - 787 D3D12 Video Encoding - Phase 2"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR77_ENABLE_OPENCL_EXTERNAL_INTEROP
+{
+    Description   = "GR - 77 OpenCL External Memory Interop"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR684_2HEAD1OR_FOR_DDS
+{
+    Description   = "GR - 684 DDS : Support for 2 head 1 OR on DDS panels"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR777_2H1OR_FOR_EDP
+{
+    Description   = "GR - 777 Support for 2H1OR with eDP panels"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR802_ALLMINFOFRAME_DYNAMIC
+{
+    Description   = "GR - 802 DD - Implement ALLM Infoframe"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_GR802;EnableGR802;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR800_SPDINFOFRAME_DYNAMIC
+{
+    Description   = "GR - 800 DD - Implement SPD Infoframe"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+    FtsRegkey     = "FTS_ENABLE_GR800;EnableGR800;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR600_VSYNC_OPTIONS_FOR_OPTIMUS_DYNAMIC
+{
+    Description   = "GR - 600 Optimus - VSync options in NVCPL UI"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+    FtsRegkey     = "FTS_ENABLE_GR600;EnableGR600;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR881_BRIGHTNESS3_V2_DYNAMIC
+{
+    Description   = "GR - 881 Brightness3 SDR uncalibrated mode, calibration data from the EDID"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+    FtsRegkey     = "FTS_ENABLE_GR881;EnableGR881;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR745_HDMI_DEEP_COLOR_REFACTORING_DYNAMIC
+{
+    Description   = "GR - 745 [PLC L0] Deep Color Bandwidth Calculating Refactoring"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+    FtsRegkey     = "FTS_ENABLE_GR745;EnableGR745;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR440_SHADER_DISK_CACHE_SIZE_CONTROL_DYNAMIC
+{
+    Description   = "GR - 440 Add control for shader disk cache size limit"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+    FtsRegkey     = "FTS_ENABLE_GR440;EnableGR440;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2170_CUDA_CRIU
+{
+    Description   = "CTK - 2170 [CUDA Driver] CRIU Checkpoint/Restore Support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_Future_Release }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR683_DSC_SUPPORT_FOR_DDS
+{
+    Description   = "GR - 683 DDS : Support for DDS with DSC enabled panels"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR525_MOVING_CASK_OUT_OF_DX
+{
+    Description   = "GR - 525 Move CASK out of DX Driver & support for Windows platform"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR589_HW_CURSOR_STATE
+{
+    Description   = "GR - 589 NvAPI for HW cursor state"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR814_REFLEX_DX9
+{
+    Description   = "GR - 814 Reflex DX9 Support for CrossfireHD"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1520_GRAPH_NULL_KERNELS
+{
+    Description   = "CTK - 1520 [CUDAGraphs] - Disable null kernel node launch"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_6 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1318_FPIFP
+{
+    Description   = "CTK - 1318 Function pointer is function pointer"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_12_0___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR769_VGPU_BRAND_REPORTING_CHANGES
+{
+    Description   = "GR - 769 vGPU product brand reporting changes for NvAPI"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2229_HOSTCALLBACKENABLEAPIACCESS
+{
+    Description   = "CTK - 2229 Enable cuda api calls in host callbacks"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rCUDA_Future_Release }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR971_CODE_COVERAGE_UTILITY
+{
+    Description   = "GR - 971 Code coverage analysis - Remove dead code and disable unused utility functions"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1035_ENABLE_NVIDIASETTINGS_ON_WAYLAND
+{
+    Description   = "GR-1035 - Enable nvidia-settings on wayland"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR970_PER_PROCESS_RM_CLIENT_HANDLE_2
+{
+    Description   = "GR - 970 Use per process RM client handle for NVAPI escapes and lower the privilege while calling RM controls - Phase II"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR965_WIFIDISPLAY_DEAD_CODE_REMOVAL_DYNAMIC
+{
+    Description   = "GR - 965 WifiDisplay Paring Dead Code Removal From KMD/NVAPI/NVCPL"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+    FtsRegkey     = "FTS_ENABLE_GR965;EnableGR965;0"
+}
+
+
+Parameter NVCFG_GLOBAL_FEATURE_GR966_CORRUPTED_EDID_HANDLING_DYNAMIC
+{
+    Description   = "GR - 966 Graceful Handling the Corrupted EDID based on the DisplayID CTS1.3"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+    FtsRegkey     = "FTS_ENABLE_GR966;EnableGR966;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1067_UPDATED_UPSCALE_FACTORS
+{
+    Description   = "GR - 1067 Additional Scaling mode for GPU scaling (NIS 1.0)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR535_UPDATED_UPSCALE_FACTORS_DYNAMIC
+{
+    Description   = "GR - 535 Driver Side Generic Upscaler"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+    FtsRegkey     = "FTS_ENABLE_GR535;EnableGR535;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1041_VBLANK_REMAPPING_DYNAMIC
+{
+    Description   = "GR - 1041 Vblank latency optimization"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_GR1041;EnableGR1041;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR923_EDP_2H1OR_V2
+{
+    Description   = "GR - 923 Support for 2H1OR with eDP panels - V2"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR978_DSC_SUPPORT_FOR_DDS_ON_AMD
+{
+    Description   = "GR - 978 DDS : Support for DDS + DSC on AMD platform"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2412_CUDA_SCHEDULER_CALLBACKS 
+{
+    Description   = "CTK - 2412 CUDA Scheduler Callbacks"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_Future_Release }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1127_NVCPL_WS_VST_EXPORT_LOG
+{
+    Description   = "GR - 1127 Export/Save View System Topology information to JSON file "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR670_DSR_SUPPORT_FOR_DDS
+{
+    Description   = "GR - 670 DSR support for DDS "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR979_INTEL_PSR_API_FOR_DDS
+{
+    Description   = "GR-979 - DDS: Support DDS on SDR panels using Intel PSR APIs instead of sideband I2C "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1069_PEX_POWER_SAVINGS_DYNAMIC
+{
+    Description   = "GR - 1069 DDS: Support DDS on SDR panels using Intel PSR APIs instead of sideband I2C "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+    FtsRegkey     = "FTS_ENABLE_GR1069;EnableGR1069;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR980_UX_INDICATOR_DDS_BATTERY_DYNAMIC
+{
+    Description   = "GR - 980 UX indicator for DDS battery life scenarios"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+    FtsRegkey     = "FTS_ENABLE_GR980;EnableGR980;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1128_MPO_ON_HDR_DYNAMIC
+{
+    Description   = "GR - 1128 Enable MPO on HDR monitors on Windows 11"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+    FtsRegkey     = "FTS_ENABLE_GR1128;EnableGR1128;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1110_USE_MOSAIC_TIMING_MAPS_DYNAMIC
+{
+    Description   = "GR - 1110 Deprecate Bloat/Unbloat timing and move to timingMaps for mosaic"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+    FtsRegkey     = "FTS_ENABLE_GR1110;EnableGR1110;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1131_ENABLE_GR599_TURING_AND_BELOW
+{
+    Description   = "GR - 1131 - Enable GR599 for Turing and below gpus "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2609_EXTENSIBLE_LAUNCH_API 
+{
+    Description   = "CTK - 2609 Extensible Launch API Implementation"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_12_0___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2314_CUDA_ARRAY_DEFERRED_MAPPING
+{
+    Description   = "CTK - 2314 Deferred VA mapping for non-sparse CUDA arrays"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_6 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2423_CUDA_DEVTOOLS_CBL_CALLBACKS 
+{
+    Description   = "CTK - 2423 DevTools CBL Callbacks"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_6 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR404_GAME_SESSION_TELEMETRY_REDESIGN
+{
+    Description   = "GR - 404 DX game session telemetry redesign"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1297_DP_OVER_USB4_DYNAMIC
+{
+    Description   = "GR - 1297 Implement USB4 support for WDDM3.0 drivers"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+    FtsRegkey     = "FTS_ENABLE_GR1297;EnableGR1297;0"
+}
+
+# Disable dynamic shader linkage until the feature has been folded into the official DDK
+Parameter NVCFG_GLOBAL_FEATURE_GR1321_D3D12_DYNAMIC_SHADER_LINKAGE
+{
+    Description   = "GR - 1321 [PLC-L1] D3D12 Dynamic Shader Linkage"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+# Disable work graph until the feature has been folded into the official DDK
+Parameter NVCFG_GLOBAL_FEATURE_GR1330_D3D12_WORKGRAPHS
+{
+    Description   = "GR - 1330 D3D12 WorkGraphs"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2635_CUDA_SM_SCALING_FOR_LAPTOP
+{
+    Description   = "CTK - 2635 SM scaling to improve compute performance on battery for Windows laptops"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1320_VIRTUAL_REFRESH_RATE_NVAPI
+{
+    Description   = "GR - 1320 [DD] Add NVAPI support for Virtual Refresh Rate"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1322_NVCPL_CHANGE_AMPERE_REFRESH_NB
+{
+    Description   = "GR - 1322 NVCPL Changes for NB Ampere Refresh Launch"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+    FtsRegkey     = "FTS_ENABLE_GR1322;EnableGR1322;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2620_CUDA_GPU_CPU_CODE_SEPARATION
+{
+    Description   = "CTK - 2620 CUDA Driver GPU/CPU code separation"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_8___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1405_MEMOP_REFACTOR 
+{
+    Description   = "CTK - 1405 Refactor memOps API"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_7 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1848_DEVICE_GRAPH_LAUNCH
+{
+    Description   = "CTK - 1848 [CUDAGraphs] Device Graph Launch"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_Future_Release }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1354_MICROMESH
+{
+    Description   = "CTK - 1354 Micromesh raytracing support"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR920_NVSWITCH_ON_VMWARE
+{
+    Description   = "GR - 920 vGPU NVswitch on VMware ESXi"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR905_MS_WER_CERTIFICATION_NVCPL
+{
+    Description   = "GR - 905 [MSFT WER certification] OEMs want NVCPL to pass MSFT WER"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+    FtsRegkey     = "FTS_ENABLE_GR905;EnableGR905;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1382_VWS_VIDEO
+{
+    Description   = "GR - 1382 vWS cross GPU Video Encoder/Decoder support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1129_MEM_TUNE_2X_CONTROLLER
+{
+    Description   = "GR - 1129 MEM Tune 2X Controller support"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1356_HW_FLIP_QUEUE_POWER_SAVING
+{
+    Description   = "GR - 1356 MSFT: Basic Hardware Flip Queue Support - Power Saving"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r520 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1210_POST_PROCESSING_CAPTURE
+{
+    Description   = "GR - 1210 NVFBC support for Processed Video for PPE/SOC Scaling based features"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1363_NVAPI_SUPPORT_FOR_MCDM_PHASE_1
+{
+    Description   = "GR - 1363 NvAPI Support for MCDM : Phase 1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+    FtsRegkey     = "FTS_ENABLE_GR1363;EnableGR1363;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2841_CUDA_LAZY_FUNCTION_FINALIZATION
+{
+    Description   = "CTK - 2841 Lazy Function Finalization"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_Future_Release }
+}
+
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2868_CUDA_LAZY_MODULE_LOADING
+{
+    Description   = "CTK - 2868 Lazy Module Loading"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_8___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2645_JIT_OPTIMIZE_SYMBOLS
+{
+    Description   = "CTK - 2645 JIT APIs - Optimize unreferenced kernels constant variables and add const qualifiers to arguments"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_7 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2221_JIT_LTO_CACHE
+{
+    Description   = "CTK - 2221 JIT LTO Kernel caching"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_7 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2611_FAST_DEPENDENT_LAUNCH
+{
+    Description   = "CTK - 2611 Launch Order and Programmatic Stream Serialization Support on Ampere-Next"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_12_0___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2752_CUDA_GRAPHS_WDDM_DMAL
+{
+    Description   = "CTK - 2752 CUDA Graphs WDDM DMAL"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_Future_Release }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR853_DIRQL_FLIPPING
+{
+    Description   = "GR - 853 [DD] Flips should (mostly) be forced to high IRQL via DpSynchronizeExecution"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+    FtsRegkey     = "FTS_ENABLE_GR853;EnableGR853;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_2_2022
+{
+    Description   = "Bug 3464412 - Security Rollout 2 2022"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2749_EXTENDED_NODE_ENABLE
+{
+    Description   = "CTK - 2749 Extend node enable API to new node types"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_7 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2895_CUDA_GET_PROC_ADDRESS
+{
+    Description   = "CTK - 2895 Implement new cuGetProcAddress_v2 API"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_12_0___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1409_CROSS_GPU_VIDEO_LINUX
+{
+    Description   = "GR - 1409 vWS cross GPU video encoder/decoder support on Linux"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2347_CUDA_VA_BASED_DMABUF_RDMA
+{
+    Description   = "CTK - 2347 CUDA API Changes for DMABUF RDMA Support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_7 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1405_MS_WER_CERTIFICATION_NVCPL_PHASE2
+{
+    Description   = "GR - 1405 [MSFT WER certification - Phase II] OEMs want NVCPL to pass MSFT WER"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+    FtsRegkey     = "FTS_ENABLE_GR1405;EnableGR1405;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1315_SUPPORT_FOR_HDR_DSC
+{
+    Description   = "GR - 1315 DDS : Support for HDR + DSC panels on AMD platform with AUX API"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+    FtsRegkey     = "FTS_ENABLE_GR1315;EnableGR1315;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1456_VESA_PSR_ON_TURING
+{
+    Description   = "GR - 1456 DDS : Add VESA PSR support for Turing GPUs"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PERF_RMCTRL_SECURITY_HARDENING
+{
+    Description   = "Bug 3501986 Raising privilege level for RM CTRLs within PERF module with GPU wide impact"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1462_ENABLE_MPO_DISPLAYLESS_GPU
+{
+    Description   = "GR - 1462 Enable 1-plane MPO in Windows Display Driver's Displayless GPU code path"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r525 }
+    FtsRegkey     = "FTS_ENABLE_GR1462;EnableGR1462;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2880_NSCQ_CCI_CMIS
+{
+   Description    = "CTK - 2880 NSCQ_CCI_CMIS"
+   Tags           = { Feature FTS }
+   ReleaseTarget  = { rCUDA_11_8___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2262_CUDA_GRAPH_NODE_PRIORITIES
+{
+    Description   = "CTK - 2262 [CUDAGraphs] Per-Node priority attributes for Graph nodes"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_7 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_INCLUDE_CUDA_WDDM
+{
+    Description   = "Include CUDA WDDM"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r390 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_INCLUDE_CUDA_WINDOWS_NON_WDDM
+{
+    Description   = "Include CUDA Windows non-WDDM"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r390 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2667_ENABLE_CBL_SUPPORT_FOR_OPTIX
+{
+    Description   = "CTK - 2667 Enable CBL support for Optix"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_7 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1896_ENABLE_NSCQ_CLI
+{
+    Description   = "CTK - 1896 Enable NSCQ CLI"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_8___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2779_ENABLE_NVLINK_ERROR_COUNTERS
+{
+    Description   = "CTK - 2779 Enable NVLink error counters"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_8___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2277_ETBL_VALIMIT_CUMEMADDRRESERVE
+{
+    Description   = "CTK - 2277 ETBL interface to restrict VA for cuMemAddressReserve"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_8___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2794_FORWARD_COMPATIBILITY
+{
+    Description   = "CTK - 2794 CUDA Forward compatibility for 11.7 and associated driver"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_7 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_INCLUDE_CUDA_HOS
+{
+    Description   = "Include CUDA HOS"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r390 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2124_CUDA_ARRAY_FORMAT_PROP_QUERY
+{
+    Description   = "CTK - 2124 CUDA array format property query"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_8___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK1765_ENABLE_LINUX_DMABUF_SUPPORT
+{
+    Description   = "CTK - 1765 Use the Linux kernel's dma-buf in CUDA."
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_11_7 }
+}
+
+Parameter NVCFG_ENVVARS_NOT_FOR_NDA_PARTNER_SOURCE_SHARING
+{
+    Description   = "Protect CUDA private/unreleased/ customer-specific envvars"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r390 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1375_PRODUCTIZE_NVAPI_ON_LINUX
+{
+    Description   = "GR - 1375 Productize NVAPI on Linux"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r525 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1393_CHANGE_ECC_PAGE_MANAGE3D_DYNAMIC
+{
+    Description   = "GR - 1393 Make ECC page available in NVCPL irrespective of displays connected to NV GPU"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+    FtsRegkey     = "FTS_ENABLE_GR1393;EnableGR1393;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2881_NVLINK_L1
+{
+    Description   = "CTK - 2881 NVLINK L1"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_12_0___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2889_THERMAL_CLK_POWER
+{
+    Description   = "CTK - 2889 THERMAL CLK POWER "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_12_0___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CTK2877_IN_BAND_COMM
+{
+    Description   = "CTK - 2877 IN BAND COMM "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rCUDA_12_0___Proposed }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1453_DEADCODE_REMOVAL_FOR_TD_SPLIT
+{
+    Description   = "GR - 1453 Remove Dead Code in TiledDisplay SPLIT Mode and mmdmm.cpp/monitor.cpp/DisplayMgr.cpp"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r525 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1355_AV1_ENCODE_MFT
+{
+    Description   = "GR - 1355 AV1 Encode MFT"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r520 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1543_POWER_ON_CORRECT_ADAPTERS
+{
+    Description   = "GR - 1543 Power ON correct adapter(s) for NVAPI Escapes - Phase II "
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r525 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1369_AUTOFL_GPU_UTILIZATION
+{
+    Description   = "GR - 1369 Linux/AutoFL: GPU utilization based autoFL"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR950_EXT_MESH_SHADER
+{
+    Description   = "GR - 950 VK_EXT_mesh_shader"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1560_GAMING_VRR_DYNAMIC
+{
+    Description   = "GR - 1560 Gaming VRR & fix for 2H1OR MRI issue"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r520 }
+    FtsRegkey     = "FTS_ENABLE_GR1560;EnableGR1560;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1379_NIS_FOR_VIRTUAL_MODE
+{
+    Description   = "GR - 1379 "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r525 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1380_DIRSCALER_ALL_RESOLUTIONS
+{
+    Description   = "GR - 1380 DirScaler for all lower resolutions than native"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r525 }
+}
+
+##########################
+### Non-FTS Parameters ###
+##########################
+
+# This var is used to differ Release/Module(develop) branches
+Parameter NVCFG_GLOBAL_FEATURE_MODULE_BRANCH
+{
+    Description   = "Enabled on module branches.  Disabled on release branches."
+    Tags          = { Feature Standard }
+    ReleaseTarget = { rFuture }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's Windows 8 OS.
+# Deprecated, bug 1454849 aspires to remove this variable
+Parameter NVCFG_GLOBAL_FEATURE_WIN8_SUPPORT
+{
+    Description   = "Enable win8 features"
+    Tags          = { Feature WinMobile }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's Windows 8.1 OS. Winblue is the code name for windows 8.1.
+# Deprecated, bug 1454849 aspires to remove this variable
+Parameter NVCFG_GLOBAL_FEATURE_WINBLUE_SUPPORT
+{
+    Description   = "Enable windows 8.1 features"
+    Tags          = { Feature WinMobile }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's wddm2.x driver model. Enabling this var implicitly enables
+# support for the Windows 10 OS.
+Parameter NVCFG_GLOBAL_FEATURE_WDDMV2_SUPPORT
+{
+    Description   = "Enable wddm2.x features (supports windows 10)"
+    Tags          = { Feature WinMobile }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's wddm2.1 driver model
+Parameter NVCFG_GLOBAL_FEATURE_WDDM2_1_SUPPORT
+{
+    Description   = "Enable windows wddm2.1 features"
+    Tags          = { Feature WinMobile}
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDMV2_SUPPORT }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's wddm2.2 driver model
+Parameter NVCFG_GLOBAL_FEATURE_WDDM2_2_SUPPORT
+{
+    Description   = "Enable windows wddm2.2 features"
+    Tags          = { Feature WinMobile}
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_1_SUPPORT }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's wddm2.3 driver model
+Parameter NVCFG_GLOBAL_FEATURE_WDDM2_3_SUPPORT
+{
+    Description   = "Enable windows wddm2.3 features"
+    Tags          = { Feature WinMobile }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_2_SUPPORT }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's wddm2.4 driver model
+Parameter NVCFG_GLOBAL_FEATURE_WDDM2_4_SUPPORT
+{
+    Description   = "Enable windows wddm2.4 features"
+    Tags          = { Feature WinMobile }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_3_SUPPORT }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's wddm2.5 driver model
+Parameter NVCFG_GLOBAL_FEATURE_WDDM2_5_SUPPORT
+{
+    Description   = "Enable windows wddm2.5 features"
+    Tags          = { Feature WinMobile }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_4_SUPPORT }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's wddm2.6 driver model
+Parameter NVCFG_GLOBAL_FEATURE_WDDM2_6_SUPPORT
+{
+    Description   = "Enable windows wddm2.6 features"
+    Tags          = { Feature winnext winfuture }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_5_SUPPORT }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's wddm2.7 driver model
+Parameter NVCFG_GLOBAL_FEATURE_WDDM2_7_SUPPORT
+{
+    Description   = "Support enablement of windows wddm2.7 features"
+    Tags          = { Feature winnext winfuture wddm2 }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_6_SUPPORT }
+}
+
+# This var is used to enable WDDM 2.7 by default if build supports it
+Parameter NVCFG_GLOBAL_FEATURE_WDDM2_7
+{
+    Description   = "Enable windows wddm2.7 features"
+    Tags          = { Feature winnext winfuture wddm2 }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_7_SUPPORT }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's wddm2.8 driver model
+Parameter NVCFG_GLOBAL_FEATURE_WDDM2_8_SUPPORT
+{
+    Description   = "Support enablement of windows wddm2.8 features"
+    Tags          = { Feature winnext winfuture wddm2 }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_7_SUPPORT }
+}
+
+# This var is used to enable WDDM 2.8 by default if build supports it
+Parameter NVCFG_GLOBAL_FEATURE_WDDM2_8
+{
+    Description   = "Enable windows wddm2.8 features"
+    Tags          = { Feature winnext winfuture wddm2 }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_8_SUPPORT }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's wddm2.9 driver model
+Parameter NVCFG_GLOBAL_FEATURE_WDDM2_9_SUPPORT
+{
+    Description   = "Support enablement of windows wddm2.9 features"
+    Tags          = { Feature winnext winfuture wddm2 }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_8_SUPPORT }
+}
+
+# This var is used to enable WDDM 2.9 by default if build supports it
+Parameter NVCFG_GLOBAL_FEATURE_WDDM2_9
+{
+    Description   = "Enable windows wddm2.9 features"
+    Tags          = { Feature winnext winfuture wddm2 }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_9_SUPPORT }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's wddm3.0 driver model
+Parameter NVCFG_GLOBAL_FEATURE_WDDM3_0_SUPPORT
+{
+    Description   = "Support enablement of windows wddm3.0 features"
+    Tags          = { Feature winnext winfuture wddm2 }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_9_SUPPORT }
+}
+
+# This var is used to enable WDDM 3.0 by default if build supports it
+Parameter NVCFG_GLOBAL_FEATURE_WDDM3_0
+{
+    Description   = "Enable windows wddm3.0 features"
+    Tags          = { Feature winnext winfuture wddm2 }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM3_0_SUPPORT }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's wddm3.1 driver model
+Parameter NVCFG_GLOBAL_FEATURE_WDDM3_1_SUPPORT
+{
+    Description   = "Support enablement of windows wddm3.1 features"
+    Tags          = { Feature winnext winfuture wddm2 }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM3_0_SUPPORT }
+}
+
+# This var is used to enable WDDM 3.1 by default if build supports it
+Parameter NVCFG_GLOBAL_FEATURE_WDDM3_1
+{
+    Description   = "Enable windows wddm3.1 features"
+    Tags          = { Feature winnext winfuture wddm2 }
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM3_1_SUPPORT }
+}
+
+# Windows Mobile is a special stripped-down OS build
+Parameter NVCFG_GLOBAL_FEATURE_WINMOBILE_SUPPORT
+{
+    Description   = "Windows Mobile build"
+    Tags          = { Feature WinMobile }
+}
+
+# This var is used to build with or without changes needed to support
+# Optimus sytle power management for MsHybrid from WDDMV2 onwards
+Parameter NVCFG_GLOBAL_FEATURE_OPTIMUS_STYLE_POWERMANAGEMENT_FOR_MSHYBRID
+{
+    Description   = "Enable Optimus style power mangement for MsHybrid in a winnext driver build"
+    Tags          = { Feature Standard }
+}
+
+# This var is used to build with or without changes needed to support
+# DirectX 12.
+Parameter NVCFG_GLOBAL_FEATURE_D3D12_SUPPORT
+{
+    Description   = "Enable Direct3D 12 in a windows next(winnext) driver build"
+    Tags          = { Feature WinMobile }
+}
+
+# Deprecated, bug 1663683 aspires to remove this variable
+Parameter NVCFG_GLOBAL_FEATURE_MSVC120CTP_SUPPORT
+{
+    Description   = "Enable use of Dev12 CTP compiler from microsoft"
+    Tags          = { Feature WinMobile }
+}
+
+# This var is used to build with or without changes needed to support
+# Microsoft's P-State implementation.
+Parameter NVCFG_GLOBAL_FEATURE_WINPSTATE_SUPPORT
+{
+    Description   = "Enable windows P-States in a WDDM driver build"
+    Tags          = { Feature Disabled }
+}
+
+
+Parameter NVCFG_GLOBAL_FEATURE_SRS1599_PHYSX_MULTIGPU_SECURITY
+{
+    Description   = "FSN725 - PhysX Security Update #1 (was SRS1599)"
+    Tags          = { Feature Standard Disabled }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FPS_OVRLY
+{
+#
+# Should be called NVCFG_GLOBAL_FEATURE_FRAMERATE_OVERLAY but preprocessor
+# running on nvd3um.rc file is truncating it.
+#
+    Description   = "Simple regkey enabled framerate overlay/logger"
+    ReleaseTarget = { rFuture }
+    Tags          = { Feature Disabled }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GH180
+{
+    Description   = "GH180 chip added as feature"
+    Tags          = { Feature }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SANDBAG
+{
+    Description   = "Indicates that some form of sandbagging is enabled (one of NVCFG_GLOBAL_FEATURE_SANDBAG_*)"
+    Tags          = { Feature Sandbag Hidden } # Feature is only enabled on demand.  Usually with secure<n> and sandbag argument to nvmake
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SANDBAG_GK104
+{
+    Description   = "Turns on sandbagging for GK104 GPUs in the DX9, DX10, and OGL drivers"
+    Requires      = { NVCFG_GLOBAL_FEATURE_SANDBAG }
+    Tags          = { Feature Hidden } # GK104 is no longer sandbagged in this branch
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SANDBAG_GK106
+{
+    Description   = "Turns on sandbagging for GK106 GPUs in the DX9, DX10, and OGL drivers"
+    Requires      = { NVCFG_GLOBAL_FEATURE_SANDBAG }
+    Tags          = { Feature Hidden } # GK106 is no longer sandbagged in this branch
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SANDBAG_GK110
+{
+    Description   = "Turns on sandbagging for GK110 GPUs in the DX9, DX10, and OGL drivers"
+    Requires      = { NVCFG_GLOBAL_FEATURE_SANDBAG }
+    Tags          = { Feature Hidden } # GK110 is no longer sandbagged in this branch
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SANDBAG_GM200
+{
+    Description   = "Turns on sandbagging for GM200 GPUs in the DX9, DX10, and OGL drivers"
+    Requires      = { NVCFG_GLOBAL_FEATURE_SANDBAG }
+    Tags          = { Feature Sandbag }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SANDBAG_GM204
+{
+    Description   = "Turns on sandbagging for GM204 GPUs in the DX9, DX10, and OGL drivers"
+    Requires      = { NVCFG_GLOBAL_FEATURE_SANDBAG }
+    Tags          = { Feature Sandbag }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SANDBAG_GM206
+{
+    Description   = "Turns on sandbagging for GM206 GPUs in the DX9, DX10, and OGL drivers"
+    Requires      = { NVCFG_GLOBAL_FEATURE_SANDBAG }
+    Tags          = { Feature Sandbag }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SANDBAG_GP100
+{
+    Description   = "Turns on sandbagging for GP100 GPUs in the DX9, DX10, and OGL drivers"
+    Requires      = { NVCFG_GLOBAL_FEATURE_SANDBAG }
+    Tags          = { Feature Sandbag }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SANDBAG_GP102
+{
+    Description   = "Turns on sandbagging for GP102 GPUs in the DX9, DX10, and OGL drivers"
+    Requires      = { NVCFG_GLOBAL_FEATURE_SANDBAG }
+    Tags          = { Feature Sandbag }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SANDBAG_GP104
+{
+    Description   = "Turns on sandbagging for GP104 GPUs in the DX9, DX10, and OGL drivers"
+    Requires      = { NVCFG_GLOBAL_FEATURE_SANDBAG }
+    Tags          = { Feature Sandbag }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SANDBAG_GP106
+{
+    Description   = "Turns on sandbagging for GP106 GPUs in the DX9, DX10, and OGL drivers"
+    Requires      = { NVCFG_GLOBAL_FEATURE_SANDBAG }
+    Tags          = { Feature Sandbag }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SANDBAG_GP107
+{
+    Description   = "Turns on sandbagging for GP107 GPUs in the DX9, DX10, and OGL drivers"
+    Requires      = { NVCFG_GLOBAL_FEATURE_SANDBAG }
+    Tags          = { Feature Sandbag }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SANDBAG_GP108
+{
+    Description   = "Turns on sandbagging for GP108 GPUs in the DX9, DX10, and OGL drivers"
+    Requires      = { NVCFG_GLOBAL_FEATURE_SANDBAG }
+    Tags          = { Feature Sandbag }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_UNSANDBAG_VIEWPERF
+{
+    Description   = "Allows unsandbagging of Viewperf via DRS key"
+    Requires      = { NVCFG_GLOBAL_FEATURE_SANDBAG }
+    Tags          = { Feature UnsandbagViewperf }
+}
+
+# This Var determines if this is a Verif only build.
+# Enabling this would expose some protected RM contol calls
+# which are to be used strictly for verification purposes
+# This feature should never be enabled on Release Builds
+#
+# NV_VERIF_FEATURES is being replaced by this nvconfig Feature.
+Parameter NVCFG_GLOBAL_FEATURE_VERIF
+{
+    Description   = "Set on Verif only builds"
+    Tags          = { Feature Disabled }
+    AuxOnEnable   = "#define NV_VERIF_FEATURES"   # Temporary to support legacy code that relies on this
+}
+
+# Determines if vertex shader transformations can be done in SW
+Parameter NVCFG_GLOBAL_FEATURE_SUPPORTS_SW_XFORM
+{
+    Description   = "Supports Software Transformations"
+    Tags          = { Feature Standard WinMobile }
+}
+
+# SOC = System on a Chip; which implies a non-PC architecture (no PCIE bus for example)
+Parameter NVCFG_GLOBAL_FEATURE_SOC
+{
+    Description   = "SOC - System on a Chip"
+    Tags          = { Feature AuroraGpu TegraGpu }
+}
+
+Parameter NVCFG_GLOBAL_NVIDIA_PRIVATE
+{
+    Description  = "NVIDIA confidential"
+    Tags         = { Feature Standard WinMobile }
+}
+
+# PTX is our virtual instruction set architecture (ISA) that is used as a compiler target by
+# the CUDA and OpenCL frontend compilers.  New HW features (instructions, special registers, etc.)
+# are often exposed in PTX.  This variable controls the exposure of internal PTX features.
+#
+# We should only ever have this set as enabled in dev branches.
+#
+Parameter NVCFG_GLOBAL_FEATURE_PTX_ISA_INTERNAL
+{
+    Description   = "RFE 843183 - PTX Virtual ISA Support (internal only)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+#Some targets need only ORI compiler
+Parameter NVCFG_GLOBAL_FEATURE_COP_ORIONLY
+{
+    Description   = "RFE 200078938 - Reduce OCG library size by removing unwanted code"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+# This variable controls the exposure of internal compute compiler features.
+# We should only ever have this set as enabled in dev branches.
+Parameter NVCFG_GLOBAL_FEATURE_COMPUTE_COMPILER_INTERNAL
+{
+    Description   = "RFE 984890 - Compute Compiler Internal Features (internal only)"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+# This variable tags all stereo code that is shared by consumer and workstation.
+Parameter NVCFG_GLOBAL_FEATURE_STEREO
+{
+    Description   = "Stereo Feature Control"
+    Tags          = { Feature Standard }
+}
+
+# All consumer stereo -related code can be bracketed with this var
+# to enable removal of consumer stereo features for MS.
+Parameter NVCFG_GLOBAL_CONSUMER_STEREO
+{
+    Description   = "Consumer Stereo Feature Control"
+    Requires      = { NVCFG_GLOBAL_FEATURE_STEREO }
+    Tags          = { Feature Standard }
+}
+
+# All Oculus related code can be bracketed with this var to enable removal.
+Parameter NVCFG_GLOBAL_FEATURE_RID47007_OCULUS
+{
+    Description   = "RID47007 - Oculus VR support Oculus VR GM204 GTM Features"
+    Requires      = { NVCFG_GLOBAL_FEATURE_STEREO }
+    Tags          = { Feature FTS Disabled}
+    FtsRegkey     = "FTS_ENABLE_RID47007;EnableRID47007;0"
+    ReleaseTarget = { rFuture }
+}
+
+
+
+# All workstation-related code can be bracketed with this var to enable removal of workstation
+# features to reduce driver size or exclude code from getting shared with 3rd parties.
+Parameter NVCFG_GLOBAL_FEATURE_WORKSTATION
+{
+    Description   = "Workstation Feature Control"
+    Requires      = { NVCFG_GLOBAL_FEATURE_STEREO }
+    Tags          = { Feature Standard }
+}
+
+# All SLI-related code can be bracketed with this var to enable removal of SLI features
+# to reduce driver size.
+Parameter NVCFG_GLOBAL_FEATURE_SLI
+{
+    Description   = "SLI Feature Control"
+    Tags          = { Feature Standard }
+}
+
+# All Mosaic-related code can be bracketed with this var to enable removal of Mosaic features
+# to reduce driver size.
+# NOTE: On pre-Kepler chips, Surround is dependent on both SLI & Mosaic being enabled. Please
+#       make sure that SLI feature is also enabled for Surround to work.
+Parameter NVCFG_GLOBAL_FEATURE_MOSAIC
+{
+    Description   = "Mosaic Feature Control"
+    Tags          = { Feature Standard }
+}
+
+# All Hybrid code can be bracketed with this var to enable removal of Hybrid features
+# to reduce driver size.
+#
+# Note: According to Ganesh Kadaba, the paths in the driver for Hybrid are used for emulation/FPGA work
+#       so while we don't support Hybrid anymore... this code cannot be removed.
+
+Parameter NVCFG_GLOBAL_FEATURE_HYBRID
+{
+    Description   = "Hybrid Feature Control"
+    Tags          = { Feature Standard }
+}
+
+# All Optimus code can be bracketed with this var to enable removal of Optimus features
+# to reduce driver size.
+Parameter NVCFG_GLOBAL_FEATURE_OPTIMUS
+{
+    Description   = "Optimus Feature Control"
+    Tags          = { Feature Standard }
+}
+
+# All ddGPU mshybrid code can be bracketed with this var to enable removal of  mshybrid display GPU features
+# to reduce driver size.
+Parameter NVCFG_GLOBAL_FEATURE_MSHYBRID_DISPLAYGPU
+{
+    Description   = "MsHybrid Display GPU Feature Control"
+    Tags          = { Feature Standard }
+}
+
+# All HClone code can be bracketed with this var to enable removal of HClone features
+# to reduce driver size.
+Parameter NVCFG_GLOBAL_FEATURE_HCLONE
+{
+    Description   = "HClone Feature Control"
+    Tags          = { Feature Standard }
+}
+
+# All DisplayPort code can be bracketed with this var to enable removal of DisplayPort features
+# to reduce driver size.
+Parameter NVCFG_GLOBAL_FEATURE_DISPLAYPORT
+{
+    Description   = "DisplayPort Feature Control"
+    Tags          = { Feature Standard }
+}
+
+# All CUDA code can be bracketed with this var to enable removal of CUDA features
+# to reduce driver size.
+Parameter NVCFG_GLOBAL_FEATURE_CUDA
+{
+    Description   = "Cuda Feature Control"
+    Tags          = { Feature Standard WinMobile }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CUDA_TOOLKIT_6_5
+{
+    Description   = "Cuda ToolKit 6.5"
+    Tags          = { Feature Standard WinMobile }
+    ReleaseTarget = { r340 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_CUDA_TOOLKIT_7_0
+{
+    Description   = "Cuda ToolKit 7.0"
+    Tags          = { Feature Standard WinMobile }
+    ReleaseTarget = { rFuture }
+}
+
+
+# All GSYNC code can be bracketed with this var to enable removal of GSYNC features
+# to reduce driver size.
+Parameter NVCFG_GLOBAL_FEATURE_GSYNC
+{
+    Description   = "Gsync Feature Control"
+    Requires      = { NVCFG_GLOBAL_FEATURE_WORKSTATION }
+    Tags          = { Feature Standard }
+}
+
+# All NVSR/JT code should be bracketed with this to allow removal of the features
+Parameter NVCFG_GLOBAL_FEATURE_NVSR
+{
+    Description   = "NVSR Feature Control"
+    Tags          = { Feature Standard }
+}
+
+# This parameter was created to exclude GFE OOTBOPS from the WinRT build.
+# GFE OOTBOPS itself was originally created for SRS 1838.
+Parameter NVCFG_GLOBAL_FEATURE_GFE_SUPPORT
+{
+    Description   = "Notification Rendering support for GFE Out of the Box Optimum Settings"
+    Tags          = { Feature Standard }
+}
+
+# All frame buffer capture code should be bracketed with this to allow removal of the feature.
+Parameter NVCFG_GLOBAL_FEATURE_FBC
+{
+    Description   = "Frame buffer capture"
+    Tags          = { Feature Standard }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FXAA
+{
+    Description   = "Post-process anti-aliasing"
+    Tags          = { Feature Standard }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SSAO
+{
+    Description  = "Screen space ambient occlusion"
+    Tags         = { Feature Standard }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FSN1861_OPENGL_IFR
+{
+    Description   = "FSN1861 - OpenGL IFR"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r331 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GC5_VIDEO_BATCHING
+{
+    Description   = "Enable video workload batching"
+    Tags          = { Feature Standard Disabled}
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID44698_GC6_IMPROVEMENTS
+{
+    Description   = "GC6 Improvements - Aggressive GC6"
+    Tags          = { Feature Standard }
+}
+
+# All frame buffer capture code should be bracketed with this to allow removal of the feature.
+Parameter NVCFG_GLOBAL_FEATURE_RID45291_FBC_NEXTGEN
+{
+    Description   = "Frame buffer capture nextgen"
+    Tags          = { Feature Standard Disabled }
+}
+
+# All reset channel test related code should be bracketed with this.
+Parameter NVCFG_GLOBAL_FEATURE_RESET_CHANNEL_TEST
+{
+    Description   = "Test channel reset by allowing random channel error injection"
+    Tags          = { Feature Standard Disabled }
+}
+
+# All CUDA JIT related code should be bracketed with this.
+Parameter NVCFG_GLOBAL_FEATURE_CUDA_PTX_JIT_SUPPORT
+{
+    Description   = "Building support for JIT Compiler and Linker in cuda"
+    Tags          = { Feature Standard }
+}
+
+# CGC and OCG Internal Profiling related code should be bracketed with this.
+Parameter NVCFG_GLOBAL_FEATURE_COMPILER_STATS_INTERNAL
+{
+    Description   = "Generate Compiler Internal Stats for measuring Compile Time and Memory FootPrint accurately"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_BUG1611309_CONST_FOLDING_GPU_COMPUTE
+{
+    Description   = "Bug 1611309: Constant folding on the GPU.  Compute-only."
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_BUG1611309_CONST_FOLDING_GPU_GRAPHICS
+{
+    Description   = "Bug 1611309: Constant folding on the GPU.  Graphics-only."
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID64348_VGPU_ON_HYPERV
+{
+    Description   = "RID - 64348 vGPU support on Hyper-V"
+    Tags          = { Feature winnext winfuture wddm2}
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_2_SUPPORT }
+    ReleaseTarget = { r390 }
+    FtsRegkey     = "FTS_ENABLE_RID64348;EnableRID64348;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1107_GUEST_HIBERNATION
+{
+    Description   = "GR - 1107 Hyper-V vGPU Support for Guest Hibernation."
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID63064_UI_FOR_SMP_SURROUND_DYNAMIC
+{
+    Description   = "RID - 63064 UI for SMP Surround"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID63064;EnableRID63064;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID62593_CPL_PER_DISPLAY_DPI_SUPPORT_DYNAMIC
+{
+    Description   = "RID - 62593 CPL support for per display DPI settings"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+    FtsRegkey     = "FTS_ENABLE_RID62593;EnableRID62593;0"
+}
+
+# All PSIRT bugs targeted for the May 2017 rollout should be bracketed with this until after r381 GA1 promotion.
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_MAY_2017
+{
+    Description   = "PSIRT May 2017 Security Rollout Control"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+# All PSIRT bugs targeted for the July 2017 rollout should be bracketed with this until after r384 GA1 promotion.
+# Code bracketed with this tag will be enabled in mod* branches but disabled in release builds
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_JULY_2017
+{
+    Description   = "PSIRT July 2017 Security Rollout Control"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_OCTOBER_2017
+{
+    Description   = "Bug 200321511 - Security Rollout October 2017"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r384 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_JANUARY_2018
+{
+    Description   = "Bug 200331516 - Security Rollout January 2018"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r367 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_PSIRTCPUHW
+{
+    Description   = "Bug 2023704 - Security Rollout PSIRTCPUHW"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r390 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_MARCH_2018
+{
+    Description   = "Bug 2048084 - Security Rollout March 2018"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r390 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_1_2019
+{
+    Description   = "Bug 200437950 - Security Rollout 1 2019"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r418 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_1_NONDDIFUZZING_2019
+{
+    Description   = "Bug 200437950 - Security Rollout 1 NonDDIFuzzing 2019"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r418 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_2_2019
+{
+    Description   = "Bug 200462993 - Security Rollout 2 2019"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_VALIDATE_NVAPI_IOCTL
+{
+    Description   = "Route NVAPI IOCTL requests through escape validation"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r384 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_KMD_DEBUG_INTERFACE
+{
+    Description   = "KMD interface to support out-of-process debugging"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r400 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_KMD_DEBUG_INTERFACE_WAR_200745958
+{
+    Description   = "WAR to work around an RM bug for resuming a context in single step mode"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r495 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_KMD_DEBUG_GRAPHICS_SUPPORT
+{
+    Description   = "KMD interface to support out-of-process debugging for graphics and non-CILP"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r415 }
+}
+
+# Control whether we log KMD asserts or errors in RM journal, nvlog,
+# etc.  This is on by default in release drivers.  The option to
+# disable is for periodic measure of any performance penalty for the
+# logging.  When this is OFF, these operations are treated as NOPs
+# Ideally, this feature key would have "assert" or "fail" in the name, but
+# that causes failures in some DVS test (see http://nvbugs/2966147/7
+Parameter NVCFG_GLOBAL_FEATURE_KMD_DEBUG_LOGGING
+{
+    Description   = "On KMD assert or dpf(error, log an entry in RM Journal"
+    Tags          = { Feature Hidden }
+    ReleaseTarget = { r450 } 
+}
+
+# NOTE-ddeaver-20191311: This option should never be enabled in any external
+# release.  The ReleaseTarget shall always be rFuture to help ensure this
+# Ideally, this feature key would have "assert" or "fail" in the name, but
+# that causes failures in some DVS test (see http://nvbugs/2966147/7
+Parameter NVCFG_GLOBAL_FEATURE_KMD_AUTOTEST_FORCED_BUGCHECK
+{
+    Description   = "Bugcheck instead of break on KMD assert fail if no debugger connected"
+    Requires      = { NVCFG_GLOBAL_FEATURE_KMD_DEBUG_LOGGING }
+    Tags          = { Feature Hidden }
+    ReleaseTarget = { rFuture } # <- DO NOT CHANGE THIS.  NEVER ON FOR RELEASE BRANCH
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID65809_WDDM_HARDWARE_SCHEDULING
+{
+    Description   = "RID - 65809 GPU Hardware Scheduling - WDDM"
+    Requires      = { NVCFG_GLOBAL_FEATURE_WDDM2_6_SUPPORT }
+    Tags          = { Feature wddm2 winnext winfuture }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PER_PRIORITY_RUNLIST_SCHEDULING
+{
+    Description   = "GPU Hardware Scheduling - WDDM per Priority Runlist"
+    Requires      = { NVCFG_GLOBAL_FEATURE_RID65809_WDDM_HARDWARE_SCHEDULING }
+    Tags          = { Feature wddm2 winnext winfuture Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_PRIORITY_CONTEXT_SCHEDULER
+{
+    Description   = "GPU Hardware Scheduling - WDDM Priority context Scheduler"
+    Requires      = { NVCFG_GLOBAL_FEATURE_RID65809_WDDM_HARDWARE_SCHEDULING }
+    Tags          = { Feature wddm2 winnext winfuture Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_ESCAPE_CENTRAL_DISPLAY_VALIDATION
+{
+    Description   = "Centrally validate display information for escapes"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r415 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_FAKE_GPU_SUPPORT
+{
+    Description   = "Feature used to protect enablement of fake GPUs used for internal testing/development only"
+    Tags          = { Feature }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RELEASE_NULL_HW
+{
+    Description   = "Allow DX1x NullHW in release builds"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID70143_SUPPORT_HDR_ON_TURING
+{
+    Description   = "Support HDR on Turing"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r400 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_NVN_INTERNAL_ONLY_TOOLS
+{
+    Description   = "RID - 70294 NVN INTERNAL ONLY TOOLS"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_WINDOWS_INSIDER_PREVIEW
+{
+    Description   = "Indicates that features which should be hidden from WIP (outside nvidia) must be disabled"
+    Tags          = { Feature FTS Disabled } # Feature is disabled by default
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SUPPORT_KVM_SRIOV
+{
+    Description   = "Indicates that SR-IOV is supported"
+    Tags          = { Feature Standard }
+}
+
+# Safety related parameters
+Parameter NVCFG_GLOBAL_SAFETY_BUILD
+{
+    Description   = "Indicates that all the non ISO 26262 compliant features will be disabled (Automotive safety)."
+    Tags          = { Feature }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_AIRPLUGIN_NVVM
+{
+    Description   = "Bug 2110882 - Build AIRPlugin with NVVM"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_NVKMS_TEGRA
+{
+    Description   = "NVKMS Tegra Support"
+    Tags          = { Feature Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_DXRT_ALLOW_TU11X
+{
+    Description   = "DXRT - Ray tracing in DX12"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r396 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73295_VRS_WRAPPERS
+{
+    Description   = "RID - 73295 VR - VRS NVAPI-DX11 wrappers for foveated rendering use case"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID72830_NVCPL_OPTION_TO_UPDATE_PPC_FW_DYNAMIC
+{
+    Description   = "RID - 72830 Enable NVCPL Option to Update PPC Firmware [PLC0]"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { r435 }
+    FtsRegkey     = "FTS_ENABLE_RID72830;EnableRID72830;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73471_DISABLE_HWPM_ACCESS_BY_DEFAULT_DYNAMIC
+{
+    Description   = "RID - 73471 Disable access to HW performance counters by default - e.g. reverse default from RID 73090"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+    FtsRegkey     = "FTS_ENABLE_RID73471;EnableRID73471;1"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_TEGRA_DISPLAY
+{
+    Description   = "Tegra Display Support"
+    Tags          = { Feature Disabled }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_TEGRA_DISPLAY_NEXT
+{
+    Description   = "Tegra 239 Display Support"
+    Tags          = { Feature Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73764_VK_LINE_STIPPLE
+{
+    Description   = "RID - 73764 Vulkan EXT - Line Stipple"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73747_SYNCHRONOUS_TRIM
+{
+    Description   = "RID - 73747 Synchronous Memory Trim"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_RID73899_MERGED_DISPLAYS_PHASE_2
+{
+    Description   = "RID - 73899 WS - Merged Display: Phase 2"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_3_2019
+{
+    Description   = "Bug 200511747 - Security Rollout 3 2019"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r421 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_4_2019
+{
+    Description   = "Bug 200527204 - Security Rollout 4 2019"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_1_2020
+{
+    Description   = "Bug 200563701 - Security Rollout 1 2020"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r440 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_1_2021
+{
+    Description   = "Bug 200653057 - Security Rollout 1 2021"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_2_2021
+{
+    Description   = "Bug 200676214 - Security Rollout 2 2021"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r465 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_WSL
+{
+    Description   = "WSL support for KMD, CUDA and DX"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_2_2020
+{
+    Description   = "Bug 200586461 - Security Rollout 2 2020"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r450 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_3_2020
+{
+    Description   = "Bug 200602316 - Security Rollout 3 2020"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r455 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_4_2020
+{
+    Description   = "Bug 200641026 - Security Rollout 4 2020"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_SECURITY_ROLLOUT_1_2022
+{
+    Description   = "Bug 200775323 - Security Rollout 1 2022"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR482_DDS_HOTPLUG_DGPU_EDP_DYNAMIC
+{
+    Description   = "GR - 482 [DDS 2.0] Hotplug dGPU display only when switch is triggered"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r460 }
+    FtsRegkey     = "FTS_ENABLE_GR482;EnableGR482;0"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR510_TDR_RECOVER_WITH_DP_MST_DYNAMIC
+{
+    Description   = "GR - 510 TDR recover with DP MST monitor"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r465 }
+    FtsRegkey     = "FTS_ENABLE_GR510;EnableGR510;1"
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_NVLINK
+{
+    Description   = "NVLink Support"
+    Tags          = { Feature Standard }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR498_REMOVAL_OF_ROOT_HANDLE_PRIV
+{
+    Description   = "GR - 498 Removal of privilege for RM root client handles"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR773_REMOVAL_OF_ROOT_HANDLE_PRIV_2
+{
+    Description   = "GR - 773 Removal of privilege for RM root client handles Part 2, an extension to GR498 feature. "
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+} 
+
+Parameter NVCFG_GLOBAL_FEATURE_GR737_DB_SUPPORT_FOR_WS_APPLICATION
+{
+    Description   = "GR - 737 Dynamic Boost support for WS compute application"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r470 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_DLPOW110_POWER_NETWORK
+{
+    Description   = "DLPOW-110 Power network support for DLSteer"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_DIRECTAMODEL_SUPPORT
+{
+    Description   = "Allow Amodel to be used in debug and develop drivers."
+    Tags          = { Feature }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_DLPOW112_COMPUTE
+{
+    Description   = "DLPOW-112 DLSteer for compute using BA counters"
+    Tags          = { Feature FTS Disabled }
+    ReleaseTarget = { rFuture }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1111_WSL_PROFILER_SUPPORT
+{
+    Description   = "GR - 1111 Implement WSL Support for DevTools Profiling"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+} 
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1489_2080_CHANNEL_SUPPORT
+{
+    Description   = "GR - 1489 Support 2080 Control Calls Requiring a Channel Handle"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r525 }
+} 
+
+Parameter NVCFG_GLOBAL_FEATURE_GR799_WSL_SUPPORT_FOR_DX_CASK
+{
+    Description   = "GR - 799 WSL Support for DX CASK Library"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1295_MEM_TUNE_ENHANCEMENT
+{
+    Description   = "GR - 1295 MEM Tune 1X Controller enhancement support"
+    Tags          = { Feature FTS  }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_MCDM_SUPPORT
+{
+    Description   = "GR-1031 Enable MCDM Compute Only driver support"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r510 }
+}
+
+Parameter NVCFG_NOT_FOR_NDA_PARTNER_SOURCE_SHARING
+{
+    Description   = "Code that is not to be included in sources shared under NDA"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r390 }
+}
+
+Parameter NVCFG_GLOBAL_FEATURE_GR1483_DISABLE_DDISPLAY_ON_WIN10
+{
+    Description   = "GR-1483 WS - limit OS support for 'dedicated display' to Win11+"
+    Tags          = { Feature FTS }
+    ReleaseTarget = { r515 }
+}
