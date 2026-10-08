@@ -12,4 +12,5 @@ Nvidia-FTS-Handler provides an overview of features enabled by Nvidia's compilat
 Note: MaxSecure flags this as Trojan.Malware.300983.susgen, but this is a false positive.
 
 # Screenshot
-![](https://github.com/St1ckyNew/-Nvidia-FTS-Handler/blob/main/Screenshot.png)
+v1.2.1
+<img width="1426" height="853" alt="image" src="https://github.com/user-attachments/assets/c1fe393f-2a38-4d6a-9f37-e333aecc0079" />
